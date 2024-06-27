@@ -27,8 +27,6 @@ import io.cucumber.testng.CucumberOptions;
 
 public class Run extends AbstractTestNGCucumberTests{
 	/*This class will be empty*/
-	//system
-	//system
-	//system
+
 
 }

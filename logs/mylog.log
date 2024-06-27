@@ -1,0 +1,44 @@
+[FATAL] 2024-06-26 16:55:17.260 [main] StepDef - Setup1 executed...
+[INFO ] 2024-06-26 16:55:17.301 [main] StepDef - chrome browser launched
+[INFO ] 2024-06-26 16:55:20.224 [main] StepDef - url opened
+[INFO ] 2024-06-26 16:55:20.597 [main] StepDef - email address and password entered
+[INFO ] 2024-06-26 16:55:21.924 [main] StepDef - Clicked on login button
+[INFO ] 2024-06-26 16:55:23.775 [main] StepDef - user can view dashboard test passed.
+[INFO ] 2024-06-26 16:55:23.779 [main] StepDef - chrome browser test_one
+[INFO ] 2024-06-26 16:55:23.781 [main] StepDef - chrome browser test_two
+[INFO ] 2024-06-26 16:55:23.782 [main] StepDef - chrome browser test_three
+[FATAL] 2024-06-26 16:57:10.691 [main] StepDef - Setup1 executed...
+[INFO ] 2024-06-26 16:57:10.699 [main] StepDef - chrome browser test_one
+[INFO ] 2024-06-26 16:57:10.700 [main] StepDef - chrome browser test_two
+[INFO ] 2024-06-26 16:57:10.701 [main] StepDef - chrome browser test_three
+[FATAL] 2024-06-26 16:59:09.780 [main] StepDef - Setup1 executed...
+[INFO ] 2024-06-26 16:59:09.790 [main] StepDef - chrome browser test_one
+[INFO ] 2024-06-26 16:59:09.791 [main] StepDef - chrome browser test_two
+[INFO ] 2024-06-26 16:59:09.792 [main] StepDef - chrome browser test_three
+[FATAL] 2024-06-26 17:01:37.832 [main] StepDef - Setup1 executed...
+[INFO ] 2024-06-26 17:01:37.839 [main] StepDef - chrome browser test_one
+[INFO ] 2024-06-26 17:01:37.841 [main] StepDef - chrome browser test_two
+[INFO ] 2024-06-26 17:01:37.842 [main] StepDef - chrome browser test_three
+[FATAL] 2024-06-26 17:02:05.629 [main] StepDef - Setup1 executed...
+[INFO ] 2024-06-26 17:02:05.637 [main] StepDef - chrome browser test_one
+[INFO ] 2024-06-26 17:02:05.639 [main] StepDef - chrome browser test_two
+[INFO ] 2024-06-26 17:02:05.640 [main] StepDef - chrome browser test_three
+[FATAL] 2024-06-26 17:03:19.456 [main] StepDef - Setup1 executed...
+[INFO ] 2024-06-26 17:03:19.467 [main] StepDef - chrome browser test_one
+[INFO ] 2024-06-26 17:03:19.468 [main] StepDef - chrome browser test_two
+[INFO ] 2024-06-26 17:03:19.469 [main] StepDef - chrome browser test_three
+[INFO ] 2024-06-26 17:16:58.589 [main] StepDef - chrome browser test_one
+[INFO ] 2024-06-26 17:16:58.596 [main] StepDef - chrome browser test_two
+[INFO ] 2024-06-26 17:16:58.596 [main] StepDef - chrome browser test_three
+[INFO ] 2024-06-27 09:49:58.375 [main] StepDef - chrome browser test_one
+[INFO ] 2024-06-27 09:49:58.380 [main] StepDef - chrome browser test_two
+[INFO ] 2024-06-27 09:49:58.381 [main] StepDef - chrome browser test_three
+[INFO ] 2024-06-27 10:27:14.223 [main] StepDef - chrome browser test_one
+[INFO ] 2024-06-27 10:27:14.230 [main] StepDef - chrome browser test_two
+[INFO ] 2024-06-27 10:27:14.231 [main] StepDef - chrome browser test_three
+[INFO ] 2024-06-27 10:47:04.840 [main] StepDef - chrome browser test_one
+[INFO ] 2024-06-27 10:47:04.854 [main] StepDef - chrome browser test_two
+[INFO ] 2024-06-27 10:47:04.856 [main] StepDef - chrome browser test_three
+[INFO ] 2024-06-27 17:52:29.334 [main] StepDef - chrome browser test_one
+[INFO ] 2024-06-27 17:52:29.530 [main] StepDef - chrome browser test_two
+[INFO ] 2024-06-27 17:52:29.532 [main] StepDef - chrome browser test_three

@@ -17,6 +17,7 @@ public class ReadConfig {
 
 	//constructor
 	public ReadConfig() {
+		System.out.println("This is Git");
 		try {
 			properties = new Properties();
 			//to open config .properties file in input mode and load the file

@@ -19,12 +19,12 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 
-public class ExtentReportListners  implements ITestListener {
+public class ExtentReportListners   implements ITestListener {
 
 
 	private static WebDriver driverFinal;
 	public static ExtentReports reports;
-	public static ExtentTest test;
+	public static ExtentTest test ;
 
 
 	private static String resultpath = getResultPath();

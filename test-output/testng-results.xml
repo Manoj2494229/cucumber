@@ -1,47 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-27T19:42:59 IST" name="Default suite" finished-at="2024-06-27T19:43:21 IST" duration-ms="22246">
+  <suite started-at="2024-06-30T00:07:13 IST" name="Default suite" finished-at="2024-06-30T00:08:24 IST" duration-ms="71411">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.apiRun@645aa696]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-06-27T19:42:59 IST" name="Default test" finished-at="2024-06-27T19:43:21 IST" duration-ms="22246">
-      <class name="TestRunner.apiRun">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.apiRun@645aa696]" started-at="2024-06-27T19:42:59 IST" name="setUpClass" finished-at="2024-06-27T19:43:00 IST" duration-ms="765" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@115a7e51]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2024-06-30T00:07:13 IST" name="Default test" finished-at="2024-06-30T00:08:24 IST" duration-ms="71411">
+      <class name="StepDefinition.credilio_journey">
+        <test-method signature="fetch_the_lead_from_response()[pri:0, instance:StepDefinition.credilio_journey@6340e5f0]" started-at="2024-06-30T00:07:13 IST" name="fetch_the_lead_from_response" finished-at="2024-06-30T00:08:24 IST" duration-ms="71371" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.apiRun@645aa696]" started-at="2024-06-27T19:43:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-27T19:43:21 IST" duration-ms="21225" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Fetch ALL API and check status code."]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Fetch ALL API and check status code"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.apiRun@645aa696]" started-at="2024-06-27T19:43:21 IST" name="tearDownClass" finished-at="2024-06-27T19:43:21 IST" duration-ms="43" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- TestRunner.apiRun -->
+        </test-method> <!-- fetch_the_lead_from_response -->
+      </class> <!-- StepDefinition.credilio_journey -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

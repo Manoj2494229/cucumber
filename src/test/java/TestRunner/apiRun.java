@@ -6,15 +6,16 @@ import io.cucumber.testng.CucumberOptions;
 @Listeners(Utitlities.ExtentReportListners.class)
 
 
-
 @CucumberOptions(
 		features = {".//Features/"},
-		glue="API",
+		glue="API", //Step definition package name
 		dryRun = false,
 		monochrome = true,
-		tags = "@api_regression",//scenarios under @sanity tag will be executed
+		tags = "@pageload",//scenarios under @sanity tag will be executed
 		plugin = {"pretty","html:target/cucumber-reports/reports_html.html"}
 		)
+
+
 public class apiRun extends AbstractTestNGCucumberTests {
-//
+
 }

@@ -2,6 +2,7 @@ package Utitlities;
 
 import java.io.FileInputStream;
 import java.util.Properties;
+import java.util.Random;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -68,6 +69,21 @@ public class ReadConfig {
 	 }
 public static void main(String[] args) throws Exception {
 	ReadConfig.getExcelData();
+}
+
+public static String generateRandomMob(int length) {
+	String characters = "667788991234567890";
+	StringBuilder sb = new StringBuilder(length);
+	Random random = new Random();
+
+	for (int i = 0; i < length; i++) 
+	{
+		int randomIndex = random.nextInt(characters.length());
+		char randomChar = characters.charAt(randomIndex);
+		sb.append(randomChar);
+	}
+
+	return sb.toString();
 }
 
 }

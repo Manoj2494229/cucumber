@@ -117,3 +117,147 @@
 [INFO ] 2024-06-27 19:43:20.617 [main] StepDef -  | 34| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/getDiscountedProducts  | 200
 [INFO ] 2024-06-27 19:43:21.280 [main] StepDef -  | 35| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product/1.0.0/updateFulfillmentStatusCallback  | 200
 [INFO ] 2024-06-27 19:43:21.664 [main] StepDef -  | 36| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-create-order/v1.0/createOrder  | 200
+[INFO ] 2024-06-27 22:55:24.006 [main] StepDef -  | 1| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/manageCustomer  | 200
+[INFO ] 2024-06-27 22:55:25.434 [main] StepDef -  | 2| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/validateCustomer  | 200
+[INFO ] 2024-06-27 22:55:26.426 [main] StepDef -  | 3| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/recordConsent  | 200
+[INFO ] 2024-06-27 22:55:27.262 [main] StepDef -  | 4| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product-details/v1.0/getProductDescription  | 200
+[INFO ] 2024-06-27 22:55:27.726 [main] StepDef -  | 5| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-manage-order/1.0.0/manageOrder  | 200
+[INFO ] 2024-06-27 22:55:28.192 [main] StepDef -  | 6| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-manage-order/1.0.0/managePromotion  | 200
+[INFO ] 2024-06-27 22:55:29.461 [main] StepDef -  | 7| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-order/v1.0/updateOrder  | 200
+[INFO ] 2024-06-27 22:55:30.121 [main] StepDef -  | 8| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-order/v1.0/getOrderDetails  | 200
+[INFO ] 2024-06-27 22:55:31.785 [main] StepDef -  | 9| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-reorder/v1.0/reOrder  | 200
+[INFO ] 2024-06-27 22:55:32.604 [main] StepDef -  | 10| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product/1.0.0/getContentData  | 200
+[INFO ] 2024-06-27 22:55:33.258 [main] StepDef -  | 11| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-wishlist/1.0.0/manageWishlist  | 200
+[INFO ] 2024-06-27 22:55:33.704 [main] StepDef -  | 12| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-wishlist/1.0.0/processWishlist  | 200
+[INFO ] 2024-06-27 22:55:34.724 [main] StepDef -  | 13| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product/1.0.0/getProductList  | 200
+[INFO ] 2024-06-27 22:55:35.874 [main] StepDef -  | 14| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product/1.0.0/getRecentProducts  | 200
+[INFO ] 2024-06-27 22:55:36.235 [main] StepDef -  | 15| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-manage-grievance/v1.0/manageGrievances  | 200
+[INFO ] 2024-06-27 22:55:37.081 [main] StepDef -  | 16| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-manage-order/1.0.0/refundStatusCallback  | 200
+[INFO ] 2024-06-27 22:55:37.436 [main] StepDef -  | 17| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product-details/v1.0/getExpiringProducts  | 200
+[INFO ] 2024-06-27 22:55:38.138 [main] StepDef -  | 18| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product/1.0.0/getProductSuggestion  | 200
+[INFO ] 2024-06-27 22:55:38.681 [main] StepDef -  | 19| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-compareproduct/1.0.0/compareProductDescription  | 200
+[INFO ] 2024-06-27 22:55:40.071 [main] StepDef -  | 20| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-order/v1.0/downloadOrderReceipt  | 200
+[INFO ] 2024-06-27 22:55:41.062 [main] StepDef -  | 21| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-order/v1.0/getOrders  | 200
+[INFO ] 2024-06-27 22:55:41.387 [main] StepDef -  | 22| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product/1.0.0/getSearchedKeywords  | 200
+[INFO ] 2024-06-27 22:55:41.679 [main] StepDef -  | 23| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-order/v1.0/updateOrderQuery  | 200
+[INFO ] 2024-06-27 22:55:42.422 [main] StepDef -  | 24| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/getProductReviews  | 200
+[INFO ] 2024-06-27 22:55:42.725 [main] StepDef -  | 25| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/setProductExpiry  | 200
+[INFO ] 2024-06-27 22:55:43.152 [main] StepDef -  | 26| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-manage-grievance/v1.0/getGrievanceTypes  | 200
+[INFO ] 2024-06-27 22:55:43.458 [main] StepDef -  | 27| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product/1.0.0/getLeadFields  | 200
+[INFO ] 2024-06-27 22:55:44.892 [main] StepDef -  | 28| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/checkCibilScore  | 200
+[INFO ] 2024-06-27 22:55:45.412 [main] StepDef -  | 29| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/verifyOTPtoGetCibilScore  | 200
+[INFO ] 2024-06-27 22:55:45.888 [main] StepDef -  | 30| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/trackLead  | 200
+[INFO ] 2024-06-27 22:55:46.702 [main] StepDef -  | 31| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-manage-grievance/v1.0/viewGrievances  | 200
+[INFO ] 2024-06-27 22:55:47.327 [main] StepDef -  | 32| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/customerFAQ  | 200
+[INFO ] 2024-06-27 22:55:48.357 [main] StepDef -  | 33| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/getRecommendedProducts  | 200
+[INFO ] 2024-06-27 22:55:49.404 [main] StepDef -  | 34| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/getDiscountedProducts  | 200
+[INFO ] 2024-06-27 22:55:51.093 [main] StepDef -  | 35| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product/1.0.0/updateFulfillmentStatusCallback  | 200
+[INFO ] 2024-06-27 22:55:51.504 [main] StepDef -  | 36| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-create-order/v1.0/createOrder  | 200
+[INFO ] 2024-06-27 23:05:16.517 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:17.114 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:18.561 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:19.079 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:20.390 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:20.806 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:21.236 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:21.610 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:22.725 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:23.137 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:24.687 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:26.129 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:26.536 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:27.330 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:28.064 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:28.532 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:29.387 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:29.923 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:31.758 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:33.413 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:34.335 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:34.799 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:35.360 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:35.993 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:36.428 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:37.162 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:37.472 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:38.519 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:38.989 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:39.261 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:40.113 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:40.714 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:41.570 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:41.845 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:42.143 [main] StepDef - 
+[INFO ] 2024-06-27 23:05:42.572 [main] StepDef - 
+[INFO ] 2024-06-27 23:06:23.404 [main] StepDef -  | 1| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/manageCustomer  | 200
+[INFO ] 2024-06-27 23:06:23.964 [main] StepDef -  | 2| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/validateCustomer  | 200
+[INFO ] 2024-06-27 23:06:24.479 [main] StepDef -  | 3| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/recordConsent  | 200
+[INFO ] 2024-06-27 23:06:25.068 [main] StepDef -  | 4| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product-details/v1.0/getProductDescription  | 200
+[INFO ] 2024-06-27 23:06:25.636 [main] StepDef -  | 5| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-manage-order/1.0.0/manageOrder  | 200
+[INFO ] 2024-06-27 23:06:26.372 [main] StepDef -  | 6| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-manage-order/1.0.0/managePromotion  | 200
+[INFO ] 2024-06-27 23:06:26.789 [main] StepDef -  | 7| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-order/v1.0/updateOrder  | 200
+[INFO ] 2024-06-27 23:06:27.130 [main] StepDef -  | 8| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-order/v1.0/getOrderDetails  | 200
+[INFO ] 2024-06-27 23:06:27.994 [main] StepDef -  | 9| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-reorder/v1.0/reOrder  | 200
+[INFO ] 2024-06-27 23:06:28.544 [main] StepDef -  | 10| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product/1.0.0/getContentData  | 200
+[INFO ] 2024-06-27 23:06:29.206 [main] StepDef -  | 11| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-wishlist/1.0.0/manageWishlist  | 200
+[INFO ] 2024-06-27 23:06:29.604 [main] StepDef -  | 12| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-wishlist/1.0.0/processWishlist  | 200
+[INFO ] 2024-06-27 23:06:30.055 [main] StepDef -  | 13| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product/1.0.0/getProductList  | 200
+[INFO ] 2024-06-27 23:06:30.354 [main] StepDef -  | 14| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product/1.0.0/getRecentProducts  | 200
+[INFO ] 2024-06-27 23:06:30.989 [main] StepDef -  | 15| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-manage-grievance/v1.0/manageGrievances  | 200
+[INFO ] 2024-06-27 23:06:31.823 [main] StepDef -  | 16| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-manage-order/1.0.0/refundStatusCallback  | 200
+[INFO ] 2024-06-27 23:06:32.266 [main] StepDef -  | 17| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product-details/v1.0/getExpiringProducts  | 200
+[INFO ] 2024-06-27 23:06:32.699 [main] StepDef -  | 18| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product/1.0.0/getProductSuggestion  | 200
+[INFO ] 2024-06-27 23:06:33.025 [main] StepDef -  | 19| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-compareproduct/1.0.0/compareProductDescription  | 200
+[INFO ] 2024-06-27 23:06:33.513 [main] StepDef -  | 20| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-order/v1.0/downloadOrderReceipt  | 200
+[INFO ] 2024-06-27 23:06:33.829 [main] StepDef -  | 21| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-order/v1.0/getOrders  | 200
+[INFO ] 2024-06-27 23:06:34.295 [main] StepDef -  | 22| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product/1.0.0/getSearchedKeywords  | 200
+[INFO ] 2024-06-27 23:06:34.642 [main] StepDef -  | 23| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-order/v1.0/updateOrderQuery  | 200
+[INFO ] 2024-06-27 23:06:34.927 [main] StepDef -  | 24| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/getProductReviews  | 200
+[INFO ] 2024-06-27 23:06:35.259 [main] StepDef -  | 25| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/setProductExpiry  | 200
+[INFO ] 2024-06-27 23:06:35.525 [main] StepDef -  | 26| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-manage-grievance/v1.0/getGrievanceTypes  | 200
+[INFO ] 2024-06-27 23:06:35.797 [main] StepDef -  | 27| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product/1.0.0/getLeadFields  | 200
+[INFO ] 2024-06-27 23:06:36.287 [main] StepDef -  | 28| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/checkCibilScore  | 200
+[INFO ] 2024-06-27 23:06:36.813 [main] StepDef -  | 29| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/verifyOTPtoGetCibilScore  | 200
+[INFO ] 2024-06-27 23:06:37.219 [main] StepDef -  | 30| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/trackLead  | 200
+[INFO ] 2024-06-27 23:06:37.562 [main] StepDef -  | 31| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-manage-grievance/v1.0/viewGrievances  | 200
+[INFO ] 2024-06-27 23:06:37.972 [main] StepDef -  | 32| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/customerFAQ  | 200
+[INFO ] 2024-06-27 23:06:38.329 [main] StepDef -  | 33| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/getRecommendedProducts  | 200
+[INFO ] 2024-06-27 23:06:38.678 [main] StepDef -  | 34| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/getDiscountedProducts  | 200
+[INFO ] 2024-06-27 23:06:39.019 [main] StepDef -  | 35| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product/1.0.0/updateFulfillmentStatusCallback  | 200
+[INFO ] 2024-06-27 23:06:39.360 [main] StepDef -  | 36| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-create-order/v1.0/createOrder  | 200
+[INFO ] 2024-06-27 23:12:08.678 [main] StepDef -  | 1| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/manageCustomer  | 200
+[INFO ] 2024-06-27 23:12:09.395 [main] StepDef -  | 2| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/validateCustomer  | 200
+[INFO ] 2024-06-27 23:12:09.878 [main] StepDef -  | 3| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/recordConsent  | 200
+[INFO ] 2024-06-27 23:12:10.326 [main] StepDef -  | 4| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product-details/v1.0/getProductDescription  | 200
+[INFO ] 2024-06-27 23:12:10.678 [main] StepDef -  | 5| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-manage-order/1.0.0/manageOrder  | 200
+[INFO ] 2024-06-27 23:12:11.088 [main] StepDef -  | 6| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-manage-order/1.0.0/managePromotion  | 200
+[INFO ] 2024-06-27 23:12:11.455 [main] StepDef -  | 7| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-order/v1.0/updateOrder  | 200
+[INFO ] 2024-06-27 23:12:11.871 [main] StepDef -  | 8| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-order/v1.0/getOrderDetails  | 200
+[INFO ] 2024-06-27 23:12:12.763 [main] StepDef -  | 9| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-reorder/v1.0/reOrder  | 200
+[INFO ] 2024-06-27 23:12:13.186 [main] StepDef -  | 10| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product/1.0.0/getContentData  | 200
+[INFO ] 2024-06-27 23:12:13.626 [main] StepDef -  | 11| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-wishlist/1.0.0/manageWishlist  | 200
+[INFO ] 2024-06-27 23:12:14.054 [main] StepDef -  | 12| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-wishlist/1.0.0/processWishlist  | 200
+[INFO ] 2024-06-27 23:12:14.788 [main] StepDef -  | 13| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product/1.0.0/getProductList  | 200
+[INFO ] 2024-06-27 23:12:15.529 [main] StepDef -  | 14| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product/1.0.0/getRecentProducts  | 200
+[INFO ] 2024-06-27 23:12:15.829 [main] StepDef -  | 15| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-manage-grievance/v1.0/manageGrievances  | 200
+[INFO ] 2024-06-27 23:12:16.127 [main] StepDef -  | 16| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-manage-order/1.0.0/refundStatusCallback  | 200
+[INFO ] 2024-06-27 23:12:16.505 [main] StepDef -  | 17| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product-details/v1.0/getExpiringProducts  | 200
+[INFO ] 2024-06-27 23:12:16.889 [main] StepDef -  | 18| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product/1.0.0/getProductSuggestion  | 200
+[INFO ] 2024-06-27 23:12:17.418 [main] StepDef -  | 19| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-compareproduct/1.0.0/compareProductDescription  | 200
+[INFO ] 2024-06-27 23:12:17.947 [main] StepDef -  | 20| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-order/v1.0/downloadOrderReceipt  | 200
+[INFO ] 2024-06-27 23:12:18.448 [main] StepDef -  | 21| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-order/v1.0/getOrders  | 200
+[INFO ] 2024-06-27 23:12:19.136 [main] StepDef -  | 22| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product/1.0.0/getSearchedKeywords  | 200
+[INFO ] 2024-06-27 23:12:19.852 [main] StepDef -  | 23| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-order/v1.0/updateOrderQuery  | 200
+[INFO ] 2024-06-27 23:12:20.278 [main] StepDef -  | 24| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/getProductReviews  | 200
+[INFO ] 2024-06-27 23:12:20.578 [main] StepDef -  | 25| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/setProductExpiry  | 200
+[INFO ] 2024-06-27 23:12:20.901 [main] StepDef -  | 26| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-manage-grievance/v1.0/getGrievanceTypes  | 200
+[INFO ] 2024-06-27 23:12:21.172 [main] StepDef -  | 27| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product/1.0.0/getLeadFields  | 200
+[INFO ] 2024-06-27 23:12:21.760 [main] StepDef -  | 28| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/checkCibilScore  | 200
+[INFO ] 2024-06-27 23:12:22.344 [main] StepDef -  | 29| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/verifyOTPtoGetCibilScore  | 200
+[INFO ] 2024-06-27 23:12:22.842 [main] StepDef -  | 30| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/trackLead  | 200
+[INFO ] 2024-06-27 23:12:23.335 [main] StepDef -  | 31| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-manage-grievance/v1.0/viewGrievances  | 200
+[INFO ] 2024-06-27 23:12:23.862 [main] StepDef -  | 32| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/customerFAQ  | 200
+[INFO ] 2024-06-27 23:12:24.347 [main] StepDef -  | 33| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/getRecommendedProducts  | 200
+[INFO ] 2024-06-27 23:12:24.668 [main] StepDef -  | 34| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-customer/v1.0/getDiscountedProducts  | 200
+[INFO ] 2024-06-27 23:12:24.980 [main] StepDef -  | 35| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-product/1.0.0/updateFulfillmentStatusCallback  | 200
+[INFO ] 2024-06-27 23:12:25.342 [main] StepDef -  | 36| API Name = https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-create-order/v1.0/createOrder  | 200

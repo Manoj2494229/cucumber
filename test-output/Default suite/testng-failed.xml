@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="API.fetchallapi">
+      <class name="StepDefinition.credilio_journey">
         <methods>
-          <include name="getAllAPI"/>
+          <include name="fill_the_lead_form_with_detailes"/>
         </methods>
-      </class> <!-- API.fetchallapi -->
+      </class> <!-- StepDefinition.credilio_journey -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

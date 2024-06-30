@@ -17,6 +17,7 @@
   </properties>
 
   <dependencies>
+  
 	  <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 <dependency>
     <groupId>io.rest-assured</groupId>
@@ -42,7 +43,9 @@
 			<artifactId>cucumber-java</artifactId>
 			<version>7.3.4</version>
 		</dependency>
-		
+		<!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+
+
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm-deps -->
 		<dependency>
 			<groupId>io.cucumber</groupId>

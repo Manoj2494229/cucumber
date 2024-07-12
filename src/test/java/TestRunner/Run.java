@@ -18,7 +18,7 @@ import io.cucumber.testng.CucumberOptions;
 		glue="StepDefinition",
 		dryRun = false,
 		monochrome = true,
-		tags = "@pageload",//scenarios under @sanity tag will be executed
+		tags = "@AXIS_008",//scenarios under @sanity tag will be executed
 		plugin = {"pretty","html:target/cucumber-reports/reports_html.html"}
 		)
 

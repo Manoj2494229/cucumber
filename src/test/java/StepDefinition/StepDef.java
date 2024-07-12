@@ -6,6 +6,7 @@ import java.time.Duration;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
+//import org.apache.logging.log4j.LogManager;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -122,9 +123,7 @@ System.out.println("This is test");
 	@When("Click on Login")
 	public void click_on_login() {
 		loginPg.clickOnLoginButton();
-
 		log.info("Clicked on login button");
-
 	}
 
 	//////////Login feature///////////////////////////

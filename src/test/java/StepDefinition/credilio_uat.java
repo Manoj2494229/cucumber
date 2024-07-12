@@ -42,22 +42,23 @@ public class credilio_uat {
 
 	}
 
-	@Given("hit clickOutWebhook_APPLICATION_STATUS_UPDATION with {string} and {string} IN UAT")
-	public void hit_click_out_webhook_application_status_updation_with_and_in_uat(String string, String string2) throws Exception {
-		String BaseURI = "https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-create-order/v1.0/clickOutWebhook";
+
+	@Given("hit clickOutWebhook_APPLICATION_STATUS_UPDATION with card as a {string} and  {string} and {string} IN UAT")
+	public void hit_click_out_webhook_application_status_updation_with_card_as_a_and_and_in_uat(String string, String string2, String string3) throws Exception {
+	String BaseURI = "https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-create-order/v1.0/clickOutWebhook";
 		//System.out.println(BaseURI);
 		Response resp1 = RestAssured.given().
 				auth().
 				oauth2(TokenListner.token(BaseURI)).
 				header("Content-Type","application/json").
 				header("x-provider","credilio").
-				body(payloadupdate(string,string2)).
+				body(payloadupdate(string,string2,string3)).
 				when().
 				post(BaseURI);
 		//System.out.println(payloadupdate(string,string2));
 		//System.out.println(" | "+i +"| API Name = " + BaseURI  + "  | "+resp1.getStatusCode());	
 		//String responseBody = resp1.jsonPath().prettify();
-		System.out.println(payloadupdate(string,string2));
+		System.out.println(payloadupdate(string,string2,string3));
 		JsonPath output1 = new JsonPath(resp1.asString());
 		System.out.println(output1.prettify());
 		//System.out.println(string +" " +string2);
@@ -77,7 +78,7 @@ public class credilio_uat {
 				+ "        \"pincode\": "+pincode+",\r\n"
 				+ "        \"product\": \"CREDIT_CARD\",\r\n"
 				+ "        \"createdAt\": \"2024-06-07 04:36:01\",\r\n"
-				+ "        \"customerId\": \"1000030101\",\r\n"
+				+ "        \"customerId\": \"1000038003\",\r\n"
 				+ "        \"journeyType\": \"CUSTOMER\",\r\n"
 				+ "        \"bureauProfile\": \"EXCELLENT\",\r\n"
 				+ "        \"primaryMobile\": "+primaryMobile+",\r\n"
@@ -89,12 +90,12 @@ public class credilio_uat {
 				+ "}";
 		return data;
 	}
-	public static String payloadupdate(String status , String subStatus)
+	public static String payloadupdate(String cardId , String status , String subStatus)
 	{
 		String data = "{\r\n"
 				+ "    \"type\": \"APPLICATION_STATUS_UPDATION\",\r\n"
 				+ "    \"data\": {\r\n"
-				+ "        \"cardId\": \"AXIS_008\",\r\n"
+				+ "        \"cardId\": \""+cardId+"\",\r\n"
 				+ "        \"leadId\": "+leadId+",\r\n"
 				+ "        \"status\": \""+status+"\",\r\n"
 				+ "        \"agentId\": \"8411effe494be249f4e5\",\r\n"

@@ -11,7 +11,7 @@ import io.cucumber.testng.CucumberOptions;
 		glue="API", //Step definition package name
 		dryRun = false,
 		monochrome = true,
-		tags = "@pageload",//scenarios under @sanity tag will be executed
+		tags = "@HDFC_026",//scenarios under @sanity tag will be executed
 		plugin = {"pretty","html:target/cucumber-reports/reports_html.html"}
 		)
 

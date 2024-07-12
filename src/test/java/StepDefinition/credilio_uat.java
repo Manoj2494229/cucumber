@@ -1,6 +1,5 @@
 package StepDefinition;
 
-
 import Utitlities.ReadConfig;
 import Utitlities.TokenListner;
 import io.cucumber.java.en.Given;
@@ -8,29 +7,23 @@ import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
-public class credilio_journey {
-	
+public class credilio_uat {
 	int i = 1;
 	static String leadId = "";
 	static String AppleadId = "";
-	@Given("fill the lead form with  {string} ,  {string} ,{string} , {string} ,{string} ,{string} detailes")
-	public void fill_the_lead_form_with_detailes(String string, String string2, String string3, String string4, String string5, String string6) {
-		System.setProperty("http.proxyHost", "proxy.tcs.com");
-		System.setProperty("http.proxyPort", "8080");
-		System.setProperty("https.proxyHost", "proxy.tcs.com");
-		System.setProperty("https.proxyPort", "8080");
+	@Given("fill the lead form with  {string} ,  {string} ,{string} , {string} ,{string} ,{string} detailes IN UAT")
+	public void fill_the_lead_form_with_detailes_in_uat(String string, String string2, String string3, String string4, String string5, String string6) {
+		
+//		System.setProperty("http.proxyHost", "proxy.tcs.com");
+//		System.setProperty("http.proxyPort", "8080");
+//		System.setProperty("https.proxyHost", "proxy.tcs.com");
+//		System.setProperty("https.proxyPort", "8080");
 		String AlphaNumericString = ReadConfig.generateRandomMob(9); 
 		leadId = AlphaNumericString;
 		AppleadId = AlphaNumericString;
 		System.out.println(AlphaNumericString);
 		RestAssured.useRelaxedHTTPSValidation();
-//		System.out.println("PAN = "+string);
-//		System.out.println("NAME = "+string2);
-//		System.out.println("income = "+string3);
-//		System.out.println("pincode =  "+string4);
-//		System.out.println("primaryMobile = "+string5);
-//		System.out.println("employmentType = "+string6);
-		String BaseURI = "https://webserver-vil-sit.lfr.cloud/o/vil-headless-create-order/v1.0/clickOutWebhook";
+		String BaseURI = "https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-create-order/v1.0/clickOutWebhook";
 		//System.out.println(BaseURI);
 		Response resp1 = RestAssured.given().
 				auth().
@@ -42,15 +35,16 @@ public class credilio_journey {
 				post(BaseURI);
 		//System.out.println(" | "+i +"| API Name = " + BaseURI  + "  | "+resp1.getStatusCode());	
 		//String responseBody = resp1.jsonPath().prettify();
-	//	System.out.println(payload(string,string2,string3,string4,string5));
+		System.out.println(payload(string,string2,string3,string4,string5));
 		JsonPath output = new JsonPath(resp1.asString());
-	//	System.out.println(output.prettify());
+		System.out.println(output.prettify());
 		//SELECT request  from VIL_ApiLogging WHERE request like '%836939306%' and url like '%/o/vil-headless-create-order/v1.0/createOrder%';
+
 	}
 
-	@Given("hit clickOutWebhook_APPLICATION_STATUS_UPDATION with {string} and {string}")
-	public void hit_click_out_webhook_application_status_updation_with_and(String string, String string2) {
-		String BaseURI = "https://webserver-vil-sit.lfr.cloud/o/vil-headless-create-order/v1.0/clickOutWebhook";
+	@Given("hit clickOutWebhook_APPLICATION_STATUS_UPDATION with {string} and {string} IN UAT")
+	public void hit_click_out_webhook_application_status_updation_with_and_in_uat(String string, String string2) throws Exception {
+		String BaseURI = "https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-create-order/v1.0/clickOutWebhook";
 		//System.out.println(BaseURI);
 		Response resp1 = RestAssured.given().
 				auth().
@@ -63,12 +57,12 @@ public class credilio_journey {
 		//System.out.println(payloadupdate(string,string2));
 		//System.out.println(" | "+i +"| API Name = " + BaseURI  + "  | "+resp1.getStatusCode());	
 		//String responseBody = resp1.jsonPath().prettify();
-		//System.out.println(payload(string,string2,string3,string4,string5));
+		System.out.println(payloadupdate(string,string2));
 		JsonPath output1 = new JsonPath(resp1.asString());
-		//System.out.println(output1.prettify());
+		System.out.println(output1.prettify());
 		//System.out.println(string +" " +string2);
+		Thread.sleep(2000);
 	}
-
 	public static String payload(String pan, String name, String income, String pincode, String primaryMobile)
 	{
 		String data = "{\r\n"
@@ -83,7 +77,7 @@ public class credilio_journey {
 				+ "        \"pincode\": "+pincode+",\r\n"
 				+ "        \"product\": \"CREDIT_CARD\",\r\n"
 				+ "        \"createdAt\": \"2024-06-07 04:36:01\",\r\n"
-				+ "        \"customerId\": \"1000064209\",\r\n"
+				+ "        \"customerId\": \"1000030101\",\r\n"
 				+ "        \"journeyType\": \"CUSTOMER\",\r\n"
 				+ "        \"bureauProfile\": \"EXCELLENT\",\r\n"
 				+ "        \"primaryMobile\": "+primaryMobile+",\r\n"
@@ -100,7 +94,7 @@ public class credilio_journey {
 		String data = "{\r\n"
 				+ "    \"type\": \"APPLICATION_STATUS_UPDATION\",\r\n"
 				+ "    \"data\": {\r\n"
-				+ "        \"cardId\": \"AXIS_014\",\r\n"
+				+ "        \"cardId\": \"AXIS_008\",\r\n"
 				+ "        \"leadId\": "+leadId+",\r\n"
 				+ "        \"status\": \""+status+"\",\r\n"
 				+ "        \"agentId\": \"8411effe494be249f4e5\",\r\n"
@@ -132,5 +126,4 @@ public class credilio_journey {
 				+ "}";
 		return data;
 	}
-
 }

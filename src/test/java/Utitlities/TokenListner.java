@@ -1,9 +1,13 @@
 package Utitlities;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 public class TokenListner {
+	  static Logger log = LogManager.getLogger("StepDef");
 	public  static String  token(String URI)
 	{
 		String token = "";
@@ -49,6 +53,10 @@ public class TokenListner {
 		{
 			System.out.println("Enter Valid Token");
 		}
-		return token; 
+		log.info("Token added ");
+		return token;
+
+			
+
 	}
 }

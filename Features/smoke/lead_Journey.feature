@@ -18,6 +18,7 @@ Feature: Login
     And the user clicks on "YES"
     Then the form should be submitted successfully
 
+@login
   Scenario: Approve the lead form
     Given Open the website "https://webserver-vil-uatnew.lfr.cloud"
     When Enter "vitechadmin2@liferay.com" into enter email mobile and click on OTP

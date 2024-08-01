@@ -1,1 +1,8 @@
 [INFO ] 2024-07-25 14:30:24.158 [main] StepDef - the_user_click_on_partner_management_tab
+[INFO ] 2024-08-01 20:22:42.497 [main] StepDef - the_user_click_on_partner_management_tab
+[INFO ] 2024-08-01 20:25:28.303 [main] StepDef - chrome browser started.
+[INFO ] 2024-08-01 20:25:28.306 [main] StepDef - open_the_website.https://webserver-vil-uatnew.lfr.cloud
+[INFO ] 2024-08-01 20:25:28.309 [main] StepDef - the_user_click_on_partner_management_tab
+[INFO ] 2024-08-01 20:30:03.696 [main] StepDef - chrome browser started.
+[INFO ] 2024-08-01 20:30:03.699 [main] StepDef - open_the_website.https://webserver-vil-uatnew.lfr.cloud
+[INFO ] 2024-08-01 20:30:03.704 [main] StepDef - the_user_click_on_partner_management_tab

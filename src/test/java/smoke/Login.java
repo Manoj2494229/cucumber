@@ -1,14 +1,21 @@
 package smoke;
 
+import org.openqa.selenium.WebDriver;
+
+import Utitlities.ConfigListner;
+import Utitlities.base;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class Login {
+public class Login extends base{
+	WebDriver driver;
 	
 	@Given("Open the website {string}")
-	public void open_the_website(String string) {
-		System.out.println("open_the_website");
+	public void open_the_website(String string) throws Exception {
+		driver = base.setUp(string);
+		log("open_the_website." +string);
+		System.out.println("open_the_website 2");
 	}
 
 	@When("Enter {string} into enter email mobile and click on OTP")

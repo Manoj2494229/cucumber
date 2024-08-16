@@ -11,7 +11,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import com.relevantcodes.extentreports.LogStatus;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-public class base {
+public class base extends Help{
+
 	static WebDriver driver;
 
 	public static void log(String logs)
@@ -24,23 +25,27 @@ public class base {
 		ExtentReportListners es = new ExtentReportListners();
 		es.test.log(LogStatus.PASS, report);
 	}
-	
-	public static  WebDriver setUp(String url) throws Exception
+
+	public static  WebDriver openTerminal(String url) throws Exception
 	{
-//		if(ConfigListner.getConfigData("browser").equalsIgnoreCase("chrome"))
-//		{	
-			ChromeOptions options = new ChromeOptions();
-			WebDriverManager.chromedriver ().clearDriverCache ();
-			options.addArguments("--remote-allow-origins=*");
-			options.addArguments("user-data-dir=C:/Users/2494229/AppData/Local/Google/Chrome/User Data/Default");
-			WebDriverManager.chromedriver().setup();
-			//WebDriver driver = new ChromeDriver(options);
-			driver = new ChromeDriver(options);
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			driver.manage().window().maximize();
-			driver.get(url);
+//		System.setProperty("http.proxyHost", "proxy.tcs.com");
+//		System.setProperty("http.proxyPort", "8080");
+//		System.setProperty("https.proxyHost", "proxy.tcs.com");
+//		System.setProperty("https.proxyPort", "8080");
+		//		if(ConfigListner.getConfigData("browser").equalsIgnoreCase("chrome"))
+		//		{	
+		ChromeOptions options = new ChromeOptions();
+		WebDriverManager.chromedriver ().clearDriverCache ();
+		options.addArguments("--remote-allow-origins=*");
+		options.addArguments("user-data-dir=C:/Users/2494229/AppData/Local/Google/Chrome/User Data/Default");
+		WebDriverManager.chromedriver().setup();
+		//WebDriver driver = new ChromeDriver(options);
+		driver = new ChromeDriver(options);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().window().maximize();
+		driver.get(url);
 		//}
-			log("chrome browser started.");
+		log("chrome browser started." +url);
 		return driver;
 	}
 

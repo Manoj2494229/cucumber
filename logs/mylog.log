@@ -6,3 +6,476 @@
 [INFO ] 2024-08-01 20:30:03.696 [main] StepDef - chrome browser started.
 [INFO ] 2024-08-01 20:30:03.699 [main] StepDef - open_the_website.https://webserver-vil-uatnew.lfr.cloud
 [INFO ] 2024-08-01 20:30:03.704 [main] StepDef - the_user_click_on_partner_management_tab
+[INFO ] 2024-08-01 20:34:11.537 [main] StepDef - chrome browser started.
+[INFO ] 2024-08-01 20:34:11.545 [main] StepDef - open_the_website.https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-01 20:37:43.531 [main] StepDef - chrome browser started.
+[INFO ] 2024-08-01 20:37:43.536 [main] StepDef - open_the_website.https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-01 20:45:18.125 [main] StepDef - chrome browser started.
+[INFO ] 2024-08-01 20:45:18.131 [main] StepDef - open_the_website.https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-01 20:50:07.793 [main] StepDef - chrome browser started.
+[INFO ] 2024-08-01 20:50:07.797 [main] StepDef - open_the_website.https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-02 16:07:41.751 [main] StepDef - chrome browser started.
+[INFO ] 2024-08-02 16:07:41.754 [main] StepDef - open_the_website.https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-02 16:07:41.757 [main] StepDef - clickElement By.xpath: //a[normalize-space()='Sign Up']
+[INFO ] 2024-08-02 16:07:43.205 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName']
+[INFO ] 2024-08-02 16:07:44.472 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1']
+[INFO ] 2024-08-02 16:07:45.709 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2']
+[INFO ] 2024-08-02 16:07:46.929 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput']
+[INFO ] 2024-08-02 16:07:48.218 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName']
+[INFO ] 2024-08-02 16:22:13.961 [main] StepDef - chrome browser started.https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-02 16:22:13.967 [main] StepDef - clickElement By.xpath: //a[normalize-space()='Sign Up']
+[INFO ] 2024-08-02 16:22:15.446 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName'] and message =  test
+[INFO ] 2024-08-02 16:22:15.446 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName']
+[INFO ] 2024-08-02 16:22:16.699 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1'] and message =  test
+[INFO ] 2024-08-02 16:22:16.701 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1']
+[INFO ] 2024-08-02 16:22:17.915 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2'] and message =  test
+[INFO ] 2024-08-02 16:22:17.915 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2']
+[INFO ] 2024-08-02 16:22:19.227 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput'] and message =  400604
+[INFO ] 2024-08-02 16:22:19.230 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput']
+[INFO ] 2024-08-02 16:22:20.553 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName'] and message =  test
+[INFO ] 2024-08-02 16:22:20.553 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName']
+[INFO ] 2024-08-02 16:22:21.848 [main] StepDef - generateRandomMob 390
+[INFO ] 2024-08-02 16:22:21.848 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_officialEmailId'] and message =  Vodafone_Idea_VI390@TCS.COM
+[INFO ] 2024-08-02 16:22:21.848 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_officialEmailId']
+[INFO ] 2024-08-02 16:22:23.138 [main] StepDef - generateRandomMob 4797739099
+[INFO ] 2024-08-02 16:22:23.138 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_mobileNumber'] and message =  4797739099
+[INFO ] 2024-08-02 16:22:23.138 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_mobileNumber']
+[INFO ] 2024-08-02 16:24:04.407 [main] StepDef - clickElement By.xpath: //span[@class='lfr-btn-label']
+[INFO ] 2024-08-02 16:24:05.525 [main] StepDef - clickElement By.xpath: //button[normalize-space()='YES']
+[INFO ] 2024-08-02 16:28:34.496 [main] StepDef - chrome browser started.https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-02 16:28:34.502 [main] StepDef - reporter the_user_opens_the_website = https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-02 16:33:42.306 [main] StepDef - chrome browser started.https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-02 16:33:42.309 [main] StepDef - reporter the_user_opens_the_website = https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-02 16:33:43.187 [main] StepDef - clickElement By.xpath: //a[normalize-space()='Sign Up']
+[INFO ] 2024-08-02 16:33:44.942 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName'] and message =  test
+[INFO ] 2024-08-02 16:33:44.942 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName']
+[INFO ] 2024-08-02 16:33:46.209 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1'] and message =  test
+[INFO ] 2024-08-02 16:33:46.210 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1']
+[INFO ] 2024-08-02 16:33:47.435 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2'] and message =  test
+[INFO ] 2024-08-02 16:33:47.435 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2']
+[INFO ] 2024-08-02 16:33:48.853 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput'] and message =  400604
+[INFO ] 2024-08-02 16:33:48.854 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput']
+[INFO ] 2024-08-02 16:33:50.193 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName'] and message =  test
+[INFO ] 2024-08-02 16:33:50.193 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName']
+[INFO ] 2024-08-02 16:33:51.528 [main] StepDef - generateRandomMob 838
+[INFO ] 2024-08-02 16:33:51.528 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_officialEmailId'] and message =  Vodafone_Idea_VI838@TCS.COM
+[INFO ] 2024-08-02 16:33:51.528 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_officialEmailId']
+[INFO ] 2024-08-02 16:33:52.835 [main] StepDef - generateRandomMob 6499764689
+[INFO ] 2024-08-02 16:33:52.835 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_mobileNumber'] and message =  6499764689
+[INFO ] 2024-08-02 16:33:52.837 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_mobileNumber']
+[INFO ] 2024-08-02 16:34:04.126 [main] StepDef - clickElement By.xpath: //span[@class='lfr-btn-label']
+[INFO ] 2024-08-02 16:34:06.213 [main] StepDef - clickElement By.xpath: //button[normalize-space()='YES']
+[INFO ] 2024-08-02 16:37:43.450 [main] StepDef - chrome browser started.https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-02 16:37:43.456 [main] StepDef - reporter the_user_opens_the_website = https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-02 16:37:44.352 [main] StepDef - clickElement By.xpath: //a[normalize-space()='Sign Up']
+[INFO ] 2024-08-02 16:37:45.857 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName'] and message =  test
+[INFO ] 2024-08-02 16:37:45.858 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName']
+[INFO ] 2024-08-02 16:37:47.113 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1'] and message =  test
+[INFO ] 2024-08-02 16:37:47.113 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1']
+[INFO ] 2024-08-02 16:37:48.320 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2'] and message =  test
+[INFO ] 2024-08-02 16:37:48.320 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2']
+[INFO ] 2024-08-02 16:37:49.525 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput'] and message =  400604
+[INFO ] 2024-08-02 16:37:49.525 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput']
+[INFO ] 2024-08-02 16:37:50.751 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName'] and message =  test
+[INFO ] 2024-08-02 16:37:50.752 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName']
+[INFO ] 2024-08-02 16:37:51.959 [main] StepDef - generateRandomMob 880
+[INFO ] 2024-08-02 16:37:51.959 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_officialEmailId'] and message =  Vodafone_Idea_VI880@TCS.COM
+[INFO ] 2024-08-02 16:37:51.960 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_officialEmailId']
+[INFO ] 2024-08-02 16:37:53.183 [main] StepDef - generateRandomMob 1718640738
+[INFO ] 2024-08-02 16:37:53.185 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_mobileNumber'] and message =  1718640738
+[INFO ] 2024-08-02 16:37:53.185 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_mobileNumber']
+[INFO ] 2024-08-02 16:38:04.422 [main] StepDef - clickElement By.xpath: //span[@class='lfr-btn-label']
+[INFO ] 2024-08-02 16:38:06.540 [main] StepDef - clickElement By.xpath: //button[normalize-space()='YES']
+[INFO ] 2024-08-02 16:39:28.944 [main] StepDef - chrome browser started.https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-02 16:39:28.948 [main] StepDef - reporter the_user_opens_the_website = https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-02 16:39:29.833 [main] StepDef - clickElement By.xpath: //a[normalize-space()='Sign Up']
+[INFO ] 2024-08-02 16:39:31.215 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName'] and message =  test
+[INFO ] 2024-08-02 16:39:31.216 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName']
+[INFO ] 2024-08-02 16:39:32.439 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1'] and message =  test
+[INFO ] 2024-08-02 16:39:32.439 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1']
+[INFO ] 2024-08-02 16:39:33.654 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2'] and message =  test
+[INFO ] 2024-08-02 16:39:33.654 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2']
+[INFO ] 2024-08-02 16:39:34.868 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput'] and message =  400604
+[INFO ] 2024-08-02 16:39:34.869 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput']
+[INFO ] 2024-08-02 16:39:36.130 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName'] and message =  test
+[INFO ] 2024-08-02 16:39:36.130 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName']
+[INFO ] 2024-08-02 16:39:37.355 [main] StepDef - generateRandomMob 877
+[INFO ] 2024-08-02 16:39:37.355 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_officialEmailId'] and message =  Vodafone_Idea_VI877@TCS.COM
+[INFO ] 2024-08-02 16:39:37.355 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_officialEmailId']
+[INFO ] 2024-08-02 16:39:38.611 [main] StepDef - generateRandomMob 7912395667
+[INFO ] 2024-08-02 16:39:38.611 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_mobileNumber'] and message =  7912395667
+[INFO ] 2024-08-02 16:39:38.611 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_mobileNumber']
+[INFO ] 2024-08-02 16:43:26.647 [main] StepDef - chrome browser started.https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-02 16:43:26.651 [main] StepDef - reporter the_user_opens_the_website = https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-02 16:43:28.752 [main] StepDef - clickElement By.xpath: //a[normalize-space()='Sign Up']
+[INFO ] 2024-08-02 16:43:31.629 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName'] and message =  test
+[INFO ] 2024-08-02 16:43:31.629 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName']
+[INFO ] 2024-08-02 16:43:34.043 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1'] and message =  test
+[INFO ] 2024-08-02 16:43:34.043 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1']
+[INFO ] 2024-08-02 16:43:36.464 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2'] and message =  test
+[INFO ] 2024-08-02 16:43:36.464 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2']
+[INFO ] 2024-08-02 16:43:38.864 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput'] and message =  400604
+[INFO ] 2024-08-02 16:43:38.864 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput']
+[INFO ] 2024-08-02 16:43:41.409 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName'] and message =  test
+[INFO ] 2024-08-02 16:43:41.410 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName']
+[INFO ] 2024-08-02 16:43:43.897 [main] StepDef - generateRandomMob 323
+[INFO ] 2024-08-02 16:43:43.898 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_officialEmailId'] and message =  Vodafone_Idea_VI323@TCS.COM
+[INFO ] 2024-08-02 16:43:43.898 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_officialEmailId']
+[INFO ] 2024-08-02 16:43:46.404 [main] StepDef - generateRandomMob 9767939928
+[INFO ] 2024-08-02 16:43:46.404 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_mobileNumber'] and message =  9767939928
+[INFO ] 2024-08-02 16:43:46.404 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_mobileNumber']
+[INFO ] 2024-08-02 16:44:01.154 [main] StepDef - clickElement By.xpath: //span[@class='lfr-btn-label']
+[INFO ] 2024-08-02 16:44:04.415 [main] StepDef - clickElement By.xpath: //button[normalize-space()='YES']
+[INFO ] 2024-08-02 16:45:29.083 [main] StepDef - chrome browser started.https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-02 16:45:29.086 [main] StepDef - reporter the_user_opens_the_website = https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-02 16:45:31.177 [main] StepDef - clickElement By.xpath: //a[normalize-space()='Sign Up']
+[INFO ] 2024-08-02 16:45:34.289 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName'] and message =  test
+[INFO ] 2024-08-02 16:45:34.289 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName']
+[INFO ] 2024-08-02 16:45:36.861 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1'] and message =  test
+[INFO ] 2024-08-02 16:45:36.861 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1']
+[INFO ] 2024-08-02 16:45:39.430 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2'] and message =  test
+[INFO ] 2024-08-02 16:45:39.430 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2']
+[INFO ] 2024-08-02 16:45:41.990 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput'] and message =  400604
+[INFO ] 2024-08-02 16:45:41.990 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput']
+[INFO ] 2024-08-02 16:45:44.576 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName'] and message =  test
+[INFO ] 2024-08-02 16:45:44.577 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName']
+[INFO ] 2024-08-02 16:45:47.153 [main] StepDef - generateRandomMob 649
+[INFO ] 2024-08-02 16:45:47.154 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_officialEmailId'] and message =  Vodafone_Idea_VI649@TCS.COM
+[INFO ] 2024-08-02 16:45:47.155 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_officialEmailId']
+[INFO ] 2024-08-02 16:45:49.677 [main] StepDef - generateRandomMob 8765696577
+[INFO ] 2024-08-02 16:45:49.677 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_mobileNumber'] and message =  8765696577
+[INFO ] 2024-08-02 16:45:49.678 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_mobileNumber']
+[INFO ] 2024-08-02 16:46:29.485 [main] StepDef - chrome browser started.https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-02 16:46:29.489 [main] StepDef - reporter the_user_opens_the_website = https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-02 16:46:31.644 [main] StepDef - clickElement By.xpath: //a[normalize-space()='Sign Up']
+[INFO ] 2024-08-02 16:46:34.278 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName'] and message =  test
+[INFO ] 2024-08-02 16:46:34.279 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName']
+[INFO ] 2024-08-02 16:46:36.768 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1'] and message =  test
+[INFO ] 2024-08-02 16:46:36.769 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1']
+[INFO ] 2024-08-02 16:46:39.186 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2'] and message =  test
+[INFO ] 2024-08-02 16:46:39.186 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2']
+[INFO ] 2024-08-02 16:46:41.582 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput'] and message =  400604
+[INFO ] 2024-08-02 16:46:41.583 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput']
+[INFO ] 2024-08-02 16:46:43.990 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName'] and message =  test
+[INFO ] 2024-08-02 16:46:43.991 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName']
+[INFO ] 2024-08-02 16:47:08.739 [main] StepDef - chrome browser started.https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-02 16:47:08.744 [main] StepDef - reporter the_user_opens_the_website = https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-02 16:47:10.889 [main] StepDef - clickElement By.xpath: //a[normalize-space()='Sign Up']
+[INFO ] 2024-08-02 16:47:14.036 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName'] and message =  test
+[INFO ] 2024-08-02 16:47:14.036 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName']
+[INFO ] 2024-08-02 16:47:16.548 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1'] and message =  test
+[INFO ] 2024-08-02 16:47:16.548 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1']
+[INFO ] 2024-08-02 16:47:19.023 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2'] and message =  test
+[INFO ] 2024-08-02 16:47:19.024 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2']
+[INFO ] 2024-08-02 16:47:21.441 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput'] and message =  400604
+[INFO ] 2024-08-02 16:47:21.444 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput']
+[INFO ] 2024-08-02 16:47:23.880 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName'] and message =  test
+[INFO ] 2024-08-02 16:47:23.880 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName']
+[INFO ] 2024-08-02 16:47:26.277 [main] StepDef - generateRandomMob 777
+[INFO ] 2024-08-02 16:47:26.277 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_officialEmailId'] and message =  Vodafone_Idea_VI777@TCS.COM
+[INFO ] 2024-08-02 16:47:26.277 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_officialEmailId']
+[INFO ] 2024-08-02 16:47:28.798 [main] StepDef - generateRandomMob 9990908619
+[INFO ] 2024-08-02 16:47:28.798 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_mobileNumber'] and message =  9990908619
+[INFO ] 2024-08-02 16:47:28.798 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_mobileNumber']
+[INFO ] 2024-08-02 16:47:43.666 [main] StepDef - clickElement By.xpath: //span[@class='lfr-btn-label']
+[INFO ] 2024-08-02 16:47:47.013 [main] StepDef - clickElement By.xpath: //button[normalize-space()='YES']
+[INFO ] 2024-08-02 16:49:40.097 [main] StepDef - chrome browser started.https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-02 16:49:40.101 [main] StepDef - reporter the_user_opens_the_website = https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-02 16:49:41.550 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-02 16:49:43.244 [main] StepDef - clickElement By.xpath: //a[normalize-space()='Sign Up']
+[INFO ] 2024-08-02 16:49:45.518 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-02 16:51:25.171 [main] StepDef - chrome browser started.https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-02 16:51:25.177 [main] StepDef - reporter the_user_opens_the_website = https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-02 16:51:26.628 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-02 16:51:27.535 [main] StepDef - clickElement By.xpath: //a[normalize-space()='Sign Up']
+[INFO ] 2024-08-02 16:51:29.651 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-02 16:51:30.556 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName'] and message =  test
+[INFO ] 2024-08-02 16:51:30.556 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName']
+[INFO ] 2024-08-02 16:51:32.343 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-02 16:51:33.227 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1'] and message =  test
+[INFO ] 2024-08-02 16:51:33.227 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1']
+[INFO ] 2024-08-02 16:51:34.962 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-02 16:51:35.839 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2'] and message =  test
+[INFO ] 2024-08-02 16:51:35.839 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2']
+[INFO ] 2024-08-02 16:51:37.560 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-02 16:51:38.420 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput'] and message =  400604
+[INFO ] 2024-08-02 16:51:38.420 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput']
+[INFO ] 2024-08-02 16:51:40.171 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-02 16:51:41.034 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName'] and message =  test
+[INFO ] 2024-08-02 16:51:41.034 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName']
+[INFO ] 2024-08-02 16:51:42.759 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-02 16:51:43.649 [main] StepDef - generateRandomMob 881
+[INFO ] 2024-08-02 16:51:43.650 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_officialEmailId'] and message =  Vodafone_Idea_VI881@TCS.COM
+[INFO ] 2024-08-02 16:51:43.650 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_officialEmailId']
+[INFO ] 2024-08-02 16:51:45.415 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-02 16:51:46.298 [main] StepDef - generateRandomMob 8693787888
+[INFO ] 2024-08-02 16:51:46.298 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_mobileNumber'] and message =  8693787888
+[INFO ] 2024-08-02 16:51:46.298 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_mobileNumber']
+[INFO ] 2024-08-02 16:51:48.027 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-02 16:51:54.404 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-02 16:52:00.832 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-02 16:52:01.746 [main] StepDef - clickElement By.xpath: //span[@class='lfr-btn-label']
+[INFO ] 2024-08-02 16:52:04.380 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-02 16:52:05.294 [main] StepDef - clickElement By.xpath: //button[normalize-space()='YES']
+[INFO ] 2024-08-02 16:52:06.921 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-02 16:52:08.330 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-06 11:17:11.249 [main] StepDef - reporter AfterStep = Fetch ALL Api and check status code and node
+[INFO ] 2024-08-06 11:30:38.812 [main] StepDef - reporter AfterStep = Fetch ALL Api and check status code and node
+[INFO ] 2024-08-06 12:01:13.267 [main] StepDef - reporter AfterStep = Fetch ALL Api and check status code and node
+[INFO ] 2024-08-08 12:37:30.429 [main] StepDef - Token added 
+[INFO ] 2024-08-08 12:37:33.892 [main] StepDef - Token added 
+[INFO ] 2024-08-08 12:38:15.229 [main] StepDef - Token added 
+[INFO ] 2024-08-08 12:38:16.071 [main] StepDef - Token added 
+[INFO ] 2024-08-08 12:38:39.047 [main] StepDef - Token added 
+[INFO ] 2024-08-08 12:38:39.758 [main] StepDef - Token added 
+[INFO ] 2024-08-08 12:39:54.285 [main] StepDef - Token added 
+[INFO ] 2024-08-08 12:39:55.111 [main] StepDef - Token added 
+[INFO ] 2024-08-08 12:40:45.824 [main] StepDef - Token added 
+[INFO ] 2024-08-08 12:40:47.355 [main] StepDef - Token added 
+[INFO ] 2024-08-08 12:56:26.178 [main] StepDef - Token added 
+[INFO ] 2024-08-08 12:56:27.563 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:04:13.145 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:04:13.992 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:04:15.442 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:04:16.413 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:04:18.219 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:04:19.387 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:04:20.821 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:04:21.643 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:04:22.663 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:04:23.210 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:04:25.142 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:04:25.943 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:04:26.482 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:04:27.005 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:04:27.881 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:04:28.522 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:04:29.190 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:04:30.077 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:04:30.740 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:04:31.627 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:06:20.594 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:06:22.409 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:06:23.366 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:06:24.379 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:06:25.508 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:06:27.226 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:06:28.468 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:06:29.652 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:06:31.946 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:06:36.950 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:06:39.232 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:06:40.780 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:06:42.592 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:06:43.243 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:06:44.376 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:06:46.577 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:06:50.215 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:06:51.877 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:06:52.998 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:06:53.760 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:06:55.067 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:06:57.619 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:06:58.863 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:06:59.851 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:07:02.010 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:07:03.755 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:07:05.022 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:07:06.129 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:07:08.250 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:07:08.922 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:07:09.954 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:07:10.726 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:59:48.758 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:59:50.343 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:59:54.492 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:59:55.392 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:59:58.345 [main] StepDef - Token added 
+[INFO ] 2024-08-08 13:59:59.356 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:02.079 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:04.080 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:07.397 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:08.495 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:11.889 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:13.011 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:16.304 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:17.118 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:22.004 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:23.083 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:27.276 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:28.600 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:31.530 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:32.631 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:35.732 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:36.398 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:40.000 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:41.302 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:44.599 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:45.923 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:49.836 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:51.530 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:54.675 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:55.567 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:00:58.407 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:00.775 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:03.709 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:04.967 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:07.791 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:08.546 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:11.290 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:11.898 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:15.295 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:16.265 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:19.303 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:20.301 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:24.614 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:25.635 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:28.596 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:30.639 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:34.558 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:35.294 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:38.266 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:39.045 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:42.275 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:43.135 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:46.357 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:47.642 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:50.561 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:52.327 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:55.658 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:01:56.393 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:02:00.631 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:02:01.785 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:02:04.866 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:02:05.685 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:02:09.148 [main] StepDef - Token added 
+[INFO ] 2024-08-08 14:02:09.917 [main] StepDef - Token added 
+[INFO ] 2024-08-16 15:08:03.525 [main] StepDef - chrome browser started.https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-16 15:08:03.529 [main] StepDef - reporter the_user_opens_the_website = https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-16 15:08:04.988 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:08:05.944 [main] StepDef - clickElement By.xpath: //a[normalize-space()='Sign Up']
+[INFO ] 2024-08-16 15:08:08.503 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:08:09.424 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName'] and message =  test
+[INFO ] 2024-08-16 15:08:09.424 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName']
+[INFO ] 2024-08-16 15:08:11.265 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:08:12.170 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1'] and message =  test
+[INFO ] 2024-08-16 15:08:12.185 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1']
+[INFO ] 2024-08-16 15:08:14.020 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:08:14.928 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2'] and message =  test
+[INFO ] 2024-08-16 15:08:14.928 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2']
+[INFO ] 2024-08-16 15:08:16.748 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:08:17.683 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput'] and message =  400604
+[INFO ] 2024-08-16 15:08:17.683 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput']
+[INFO ] 2024-08-16 15:08:19.528 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:08:20.436 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName'] and message =  test
+[INFO ] 2024-08-16 15:08:20.436 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName']
+[INFO ] 2024-08-16 15:08:22.244 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:08:23.144 [main] StepDef - generateRandomMob 584
+[INFO ] 2024-08-16 15:08:23.144 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_officialEmailId'] and message =  Vodafone_Idea_VI584@TCS.COM
+[INFO ] 2024-08-16 15:08:23.160 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_officialEmailId']
+[INFO ] 2024-08-16 15:08:25.021 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:08:25.933 [main] StepDef - generateRandomMob 7857666775
+[INFO ] 2024-08-16 15:08:25.933 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_mobileNumber'] and message =  7857666775
+[INFO ] 2024-08-16 15:08:25.939 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_mobileNumber']
+[INFO ] 2024-08-16 15:08:27.746 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:08:34.199 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:08:40.633 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:08:41.545 [main] StepDef - clickElement By.xpath: //span[@class='lfr-btn-label']
+[INFO ] 2024-08-16 15:08:44.194 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:08:45.108 [main] StepDef - clickElement By.xpath: //button[normalize-space()='YES']
+[INFO ] 2024-08-16 15:08:46.725 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:08:48.143 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:08:52.150 [main] StepDef - reporter AfterStep = Approve the lead form
+[INFO ] 2024-08-16 15:12:34.537 [main] StepDef - chrome browser started.https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-16 15:12:34.541 [main] StepDef - reporter the_user_opens_the_website = https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-16 15:12:35.986 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:12:36.915 [main] StepDef - clickElement By.xpath: //a[normalize-space()='Sign Up']
+[INFO ] 2024-08-16 15:12:38.932 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:12:39.866 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName'] and message =  test
+[INFO ] 2024-08-16 15:12:39.866 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName']
+[INFO ] 2024-08-16 15:12:41.711 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:12:42.622 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1'] and message =  test
+[INFO ] 2024-08-16 15:12:42.622 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1']
+[INFO ] 2024-08-16 15:12:44.451 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:12:45.394 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2'] and message =  test
+[INFO ] 2024-08-16 15:12:45.394 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2']
+[INFO ] 2024-08-16 15:12:47.203 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:12:48.132 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput'] and message =  400604
+[INFO ] 2024-08-16 15:12:48.132 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput']
+[INFO ] 2024-08-16 15:12:49.979 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:12:50.896 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName'] and message =  test
+[INFO ] 2024-08-16 15:12:50.896 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName']
+[INFO ] 2024-08-16 15:12:52.718 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:12:53.635 [main] StepDef - generateRandomMob 356
+[INFO ] 2024-08-16 15:12:53.635 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_officialEmailId'] and message =  Vodafone_Idea_VI356@TCS.COM
+[INFO ] 2024-08-16 15:12:53.636 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_officialEmailId']
+[INFO ] 2024-08-16 15:12:55.494 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:12:56.410 [main] StepDef - generateRandomMob 9298249627
+[INFO ] 2024-08-16 15:12:56.410 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_mobileNumber'] and message =  9298249627
+[INFO ] 2024-08-16 15:12:56.410 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_mobileNumber']
+[INFO ] 2024-08-16 15:12:58.218 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:13:04.659 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:13:11.089 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:13:12.025 [main] StepDef - clickElement By.xpath: //span[@class='lfr-btn-label']
+[INFO ] 2024-08-16 15:13:14.647 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:13:15.555 [main] StepDef - clickElement By.xpath: //button[normalize-space()='YES']
+[INFO ] 2024-08-16 15:13:17.161 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:13:18.931 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 15:13:23.988 [main] StepDef - chrome browser started.https://webserver-vil-uatnew.lfr.cloud
+[INFO ] 2024-08-16 15:13:24.501 [main] StepDef - reporter AfterStep = Approve the lead form
+[INFO ] 2024-08-16 15:13:25.959 [main] StepDef - reporter AfterStep = Approve the lead form
+[INFO ] 2024-08-16 15:13:27.422 [main] StepDef - reporter AfterStep = Approve the lead form
+[INFO ] 2024-08-16 15:13:28.860 [main] StepDef - reporter AfterStep = Approve the lead form
+[INFO ] 2024-08-16 15:13:29.782 [main] StepDef - the_user_click_on_partner_management_tab
+[INFO ] 2024-08-16 15:13:30.300 [main] StepDef - reporter AfterStep = Approve the lead form
+[INFO ] 2024-08-16 15:13:31.734 [main] StepDef - reporter AfterStep = Approve the lead form
+[INFO ] 2024-08-16 15:13:33.155 [main] StepDef - reporter AfterStep = Approve the lead form
+[INFO ] 2024-08-16 15:13:34.587 [main] StepDef - reporter AfterStep = Approve the lead form
+[INFO ] 2024-08-16 15:13:36.018 [main] StepDef - reporter AfterStep = Approve the lead form
+[INFO ] 2024-08-16 15:13:37.444 [main] StepDef - reporter AfterStep = Approve the lead form
+[INFO ] 2024-08-16 15:13:39.005 [main] StepDef - reporter AfterStep = Approve the lead form
+[INFO ] 2024-08-16 15:13:40.421 [main] StepDef - reporter AfterStep = Approve the lead form
+[INFO ] 2024-08-16 15:13:42.038 [main] StepDef - reporter AfterStep = Approve the lead form
+[INFO ] 2024-08-16 21:59:48.304 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 21:59:50.408 [main] StepDef - reporter AfterStep = Approve the lead form
+[INFO ] 2024-08-16 22:00:33.667 [main] StepDef - chrome browser started.https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-16 22:00:33.670 [main] StepDef - reporter the_user_opens_the_website = https://webserver-vil-uatnew.lfr.cloud/
+[INFO ] 2024-08-16 22:00:35.058 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 22:00:35.909 [main] StepDef - clickElement By.xpath: //a[normalize-space()='Sign Up']
+[INFO ] 2024-08-16 22:00:38.178 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 22:00:39.031 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName'] and message =  test
+[INFO ] 2024-08-16 22:00:39.031 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName']
+[INFO ] 2024-08-16 22:00:40.774 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 22:00:41.632 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1'] and message =  test
+[INFO ] 2024-08-16 22:00:41.632 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress1']
+[INFO ] 2024-08-16 22:00:43.344 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 22:00:44.180 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2'] and message =  test
+[INFO ] 2024-08-16 22:00:44.180 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_registeredAddress2']
+[INFO ] 2024-08-16 22:00:45.895 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 22:00:46.757 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput'] and message =  400604
+[INFO ] 2024-08-16 22:00:46.757 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_pinInput']
+[INFO ] 2024-08-16 22:00:48.491 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 22:00:49.354 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName'] and message =  test
+[INFO ] 2024-08-16 22:00:49.354 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_contactPersonName']
+[INFO ] 2024-08-16 22:00:51.077 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 22:00:51.935 [main] StepDef - generateRandomMob 989
+[INFO ] 2024-08-16 22:00:51.935 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_officialEmailId'] and message =  Vodafone_Idea_VI989@TCS.COM
+[INFO ] 2024-08-16 22:00:51.935 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_officialEmailId']
+[INFO ] 2024-08-16 22:00:53.669 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 22:00:54.532 [main] StepDef - generateRandomMob 3487983610
+[INFO ] 2024-08-16 22:00:54.532 [main] StepDef - enterText By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_mobileNumber'] and message =  3487983610
+[INFO ] 2024-08-16 22:00:54.532 [main] StepDef - clickElement By.xpath: //input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_mobileNumber']
+[INFO ] 2024-08-16 22:00:56.235 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 22:01:02.648 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 22:01:09.054 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 22:01:09.917 [main] StepDef - clickElement By.xpath: //span[@class='lfr-btn-label']
+[INFO ] 2024-08-16 22:01:12.523 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 22:01:13.380 [main] StepDef - clickElement By.xpath: //button[normalize-space()='YES']
+[INFO ] 2024-08-16 22:01:14.961 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 22:01:16.484 [main] StepDef - reporter AfterStep = Fill up the lead form and submit
+[INFO ] 2024-08-16 22:01:21.223 [main] StepDef - chrome browser started.https://webserver-vil-uatnew.lfr.cloud
+[INFO ] 2024-08-16 22:01:21.739 [main] StepDef - reporter AfterStep = Approve the lead form
+[INFO ] 2024-08-16 22:01:23.751 [main] StepDef - reporter AfterStep = Approve the lead form
+[INFO ] 2024-08-16 22:15:23.393 [main] StepDef - chrome browser started.https://webserver-vil-uatnew.lfr.cloud
+[INFO ] 2024-08-16 22:15:23.910 [main] StepDef - reporter AfterStep = Approve the lead form
+[INFO ] 2024-08-16 22:15:25.563 [main] StepDef - reporter AfterStep = Approve the lead form

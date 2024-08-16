@@ -14,7 +14,7 @@ import com.codoid.products.fillo.Recordset;
 
 public class readExcelConfig {
 
-	public static String getBaseURI(int apinumber ,int dataHead) throws Exception
+	public static String getBaseURI(int apinumber ,int dataHead ) throws Exception
 	{	
 		FileInputStream fis = new FileInputStream("./src/test/resource/excel/testdata.xlsx");
 		//Create workbook object by using workbookfacory
@@ -92,6 +92,30 @@ public class readExcelConfig {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+	
+	//read file for credilio code
+	public static String generate_leadID(String Query , String Key , int num) throws Exception
+	{	
+		String DATA = null ;
+		String CIR = Query;
+		ArrayList<String> listdata = new ArrayList<String>();
+		try {
+			Fillo fillo = new Fillo();
+			Connection connection = fillo.getConnection("./src/test/resource/excel/CID_CRE.xlsx");
+			Recordset APSET = connection.executeQuery(CIR);
+			while (APSET.next()) 
+			{
+				listdata.add(APSET.getField(Key));
+			}
+			APSET.close();
+			connection.close();
+		} catch (FilloException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return listdata.get(num);
 	}
 	
 

@@ -40,8 +40,9 @@ public class SeleniumDatabaseTesting {
 	//SELECT customerID ,status  from VIL_Customer WHERE msisdn = 9373737606 and status = 0;
 	@Test
 	public void test() {
+		
 		try{
-			String query = "SELECT responseData  , callingTime  from VIL_ApiLogging where request LIKE '%2100012123456111111%' and url like '%/o/vil-headless-create-order/v1.0/createOrder%';";
+			String query = "SELECT nodeName ,requestId FROM VIL_ApiLogging WHERE requestId = '1234567654321' ORDER BY callingTime DESC LIMIT 50 ;";
 			// Get the contents of userinfo table from DB
 			ResultSet res = stmt.executeQuery(query);
 			// Print the result untill all the records are printed

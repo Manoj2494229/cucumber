@@ -4,8 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 
-
-
+import Utitlities.ConfigListner;
 import Utitlities.base;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Scenario;
@@ -32,7 +31,7 @@ public class leadFormSubmit extends base{
 
 	@When("the user enters {string} into company\\/legal entity name Required")
 	public void the_user_enters_into_company_legal_entity_name_required(String string) throws Exception {
-		enterText(driver, By.xpath("//input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName']"), string);
+		enterText(driver, By.xpath("//input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_companylegalName']"), ConfigListner.getLoginConfigData("username"));
 		System.out.println("the_user_enters_into_company_legal_entity_name_required");
 	}
 
@@ -58,7 +57,7 @@ public class leadFormSubmit extends base{
 
 	@When("the user enters {string} into official email id Required")
 	public void the_user_enters_into_official_email_id_required(String string) throws Exception {
-		enterText(driver, By.xpath("//input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_officialEmailId']"), "Vodafone_Idea_VI"+generateRandomMob(3)+"@TCS.COM");
+		enterText(driver, By.xpath("//input[@id='_com_vil_partner_lead_registration_VilLeadFormPortlet_INSTANCE_dsym_officialEmailId']"), "Regression"+generateRandomMob(3)+"@TCS.COM");
 		System.out.println("the_user_enters_into_official_email_id_required");
 	}
 

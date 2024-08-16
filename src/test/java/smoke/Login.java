@@ -26,7 +26,7 @@ public class Login extends base{
 		driver.navigate().refresh();
 
 		//Login Page
-		driver.findElement(By.xpath("//input[@id='_com_liferay_login_web_portlet_LoginPortlet_login']")).sendKeys(ConfigListner.getLoginConfigData("username"));
+		driver.findElement(By.xpath("//input[@id='_com_liferay_login_web_portlet_LoginPortlet_login']")).sendKeys(ConfigListner.getConfigData("username"));
 
 		//OTP
 		driver.findElement(By.xpath("//a[@class='otps']")).click();

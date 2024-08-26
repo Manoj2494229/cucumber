@@ -1,6 +1,6 @@
 Feature: Login
 
-@leadform 
+@leadform @smoke
   Scenario: Fill up the lead form and submit
     Given the user opens the website "https://webserver-vil-uatnew.lfr.cloud/"
     When the user clicks on Sign Up Button

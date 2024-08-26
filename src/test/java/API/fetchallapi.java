@@ -2,6 +2,7 @@ package API;
 
 import java.util.ArrayList;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.github.javafaker.Faker;
@@ -19,7 +20,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import com.github.javafaker.Faker;
-//@Listeners(Utitlities.ExtentReportListners.class)
+@Listeners(Utitlities.ExtentReportListners.class)
 
 public class fetchallapi extends base {
 	private static String SIT = "https://webserver-vil-sit.lfr.cloud";
@@ -28,11 +29,8 @@ public class fetchallapi extends base {
 
 	@Given("Fetch all api and check status code and node")
 	public void fetch_all_api_and_check_status_code_and_node() throws Exception {
-		System.setProperty("http.proxyHost", "proxy.tcs.com");
-		System.setProperty("http.proxyPort", "8080");
-		System.setProperty("https.proxyHost", "proxy.tcs.com");
-		System.setProperty("https.proxyPort", "8080");
-		RestAssured.useRelaxedHTTPSValidation();
+
+		
 		readExcelConfig.getLeadData(1,2);
 		for(int i = 1 ;i<=36 ;i++)
 		{
@@ -52,17 +50,17 @@ public class fetchallapi extends base {
 			Date d = new Date();
 			SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMDD");
 			String fileName=basePath+"RC_"+sdf.format(d)+".csv";
-						  // object of BufferedWriter class
+			// object of BufferedWriter class
 			BufferedWriter out = new BufferedWriter(
-				            new FileWriter(fileName, true));
+					new FileWriter(fileName, true));
 
-				        // Writing on output stream
+			// Writing on output stream
 			logInCsv = " | "+i +"| API Name = " + BaseURI  + "  | "+resp1.getStatusCode();
 			out.write(logInCsv);
-				        // Closing the connection
+			// Closing the connection
 			out.close();
-			
-			
+
+
 		}
 	}
 
@@ -70,36 +68,37 @@ public class fetchallapi extends base {
 	public void store_in_csv_file() throws IOException {
 
 
-				
+
 		String basePath = "C:\\\\Temp\\\\ReverseCouponPT\\\\";
 		Date d = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMDD");
 		String fileName=basePath+"RC_"+sdf.format(d)+".csv";
-					  // object of BufferedWriter class
+		// object of BufferedWriter class
 		BufferedWriter out = new BufferedWriter(
-			            new FileWriter(fileName, true));
+				new FileWriter(fileName, true));
 
-			        // Writing on output stream
+		// Writing on output stream
 		out.write(logInCsv);
-			        // Closing the connection
+		// Closing the connection
 		out.close();
 	}
-	
-	
-	
-	
+
+
+
+
 	@When("hit api")
 	public void hit_api() throws Exception {
-		System.setProperty("http.proxyHost", "proxy.tcs.com");
-		System.setProperty("http.proxyPort", "8080");
-		System.setProperty("https.proxyHost", "proxy.tcs.com");
-		System.setProperty("https.proxyPort", "8080");
+		//		System.setProperty("http.proxyHost", "proxy.tcs.com");
+		//		System.setProperty("http.proxyPort", "8080");
+		//		System.setProperty("https.proxyHost", "proxy.tcs.com");
+		//		System.setProperty("https.proxyPort", "8080");
 		RestAssured.useRelaxedHTTPSValidation();
-		readExcelConfig.getLeadData(1,2);
+		//readExcelConfig.getLeadData(1,2);
 	}
 
 	@When("check status response")
 	public void check_status_response() throws Exception {
+		System.out.println("Ti");
 		for(int i = 1 ;i<=36 ;i++)
 		{
 			String BaseURI = UAT.concat(readExcelConfig.getBaseURI(i,1));
@@ -112,18 +111,22 @@ public class fetchallapi extends base {
 					when().
 					post(BaseURI);
 			System.out.println(" | "+i +"| API Name = " + BaseURI  + "  | "+resp1.getStatusCode());	
-			report(" | "+i +"| API Name = " + BaseURI  + "  | "+resp1.getStatusCode());
-			log(" | "+i +"| API Name = " + BaseURI  + "  | "+resp1.getStatusCode());
+			//get response time
+			long c = resp1.getTime();
+			String StatusLine = resp1.getStatusLine();
+
+			reporter(" | "+i +"| API Name = " + BaseURI  +" | Response time in milliseconds: " + c +" | StatusLine: "+StatusLine);
+			log(" | "+i +"| API Name = " + BaseURI  + "  | "+resp1.getStatusCode()+" | Response time in milliseconds: " + c);
 		}
 	}
 
 	@Test
 	public void hit_api_test() throws Exception {
 		final String path = "./src/test/resource/excel/leadDataFile.xlsx";
-		
-		
+
+
 		String fetchQuery = "SELECT STATUS  FROM LD WHERE BANK LIKE '%Axis%'";
-		
+
 		ArrayList<String> list = readExcelConfig.getData( fetchQuery, "STATUS" , path);
 		for(String s : list)
 		{

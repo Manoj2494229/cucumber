@@ -31,7 +31,7 @@ public class ConfigListner extends ExtentReportListners{
 	}
 	public static String getLoginConfigData(String Key) throws Exception  {
 		try {
-			FileInputStream fis = new FileInputStream("./src/test/resources/propertiesFile/login.properties");
+			FileInputStream fis = new FileInputStream("./src/test/resources/propertiesFile/login_1.properties");
 			Properties prop = new Properties();
 			prop.load(fis);
 			return prop.getProperty(Key);	

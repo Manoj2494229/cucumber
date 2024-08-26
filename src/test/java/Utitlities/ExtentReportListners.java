@@ -19,7 +19,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 
-public class ExtentReportListners   implements ITestListener {
+public class ExtentReportListners  implements ITestListener {
 
 
 	private static WebDriver driverFinal;
@@ -130,11 +130,11 @@ public class ExtentReportListners   implements ITestListener {
 	}
 	public static  void sscapture() throws Exception
 	{
-		FileInputStream fis = new FileInputStream("./src/test/resources/propertiesFile/login.properties");
-		Properties prop = new Properties();
-		prop.load(fis);
+//		FileInputStream fis = new FileInputStream("./src/test/resources/propertiesFile/login.properties");
+//		Properties prop = new Properties();
+//		prop.load(fis);
 		Thread.sleep(500);
-		String screenshotPath = getScreenshot(driverFinal, "testing");
+		String screenshotPath = getScreenshot(base.driver, "testing");
 		//System.out.println(screenshotPath);
 		test.log(LogStatus.PASS,test.addBase64ScreenShot(screenshotPath));
 	}

@@ -1,31 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-12T23:10:17 IST" name="Default suite" finished-at="2024-07-12T23:10:18 IST" duration-ms="980">
+  <suite started-at="2024-08-16T23:33:55 IST" name="Default suite" finished-at="2024-08-16T23:34:08 IST" duration-ms="13441">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.Run@710c2b53]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testRunner_smoke@14028087]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-07-12T23:10:17 IST" name="Default test" finished-at="2024-07-12T23:10:18 IST" duration-ms="980">
-      <class name="TestRunner.Run">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.Run@710c2b53]" started-at="2024-07-12T23:10:17 IST" name="setUpClass" finished-at="2024-07-12T23:10:18 IST" duration-ms="909" status="PASS">
+    <test started-at="2024-08-16T23:33:55 IST" name="Default test" finished-at="2024-08-16T23:34:08 IST" duration-ms="13441">
+      <class name="TestRunner.testRunner_smoke">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.testRunner_smoke@14028087]" started-at="2024-08-16T23:33:55 IST" name="setUpClass" finished-at="2024-08-16T23:33:56 IST" duration-ms="926" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3add81c4]]>
+                <![CDATA[org.testng.TestRunner@38a96593]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.Run@710c2b53]" started-at="2024-07-12T23:10:18 IST" name="tearDownClass" finished-at="2024-07-12T23:10:18 IST" duration-ms="33" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testRunner_smoke@14028087]" started-at="2024-08-16T23:33:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-08-16T23:34:07 IST" duration-ms="11472" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Approve the lead form"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
+at smoke.Login.enter_into_enter_email_mobile_and_click_on_otp(Login.java:29)
+at ✽.Enter "vitechadmin2@liferay.com" into enter email mobile and click on OTP(file:///C:/Users/2494229/OneDrive%20-%20TCS%20COM%20PROD/Manoj_Bhole/Automation/git_cucumber/git/cucumber/./Features/smoke/lead_Journey.feature:23)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.testRunner_smoke@14028087]" started-at="2024-08-16T23:34:08 IST" name="tearDownClass" finished-at="2024-08-16T23:34:08 IST" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- TestRunner.Run -->
+      </class> <!-- TestRunner.testRunner_smoke -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

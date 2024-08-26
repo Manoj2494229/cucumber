@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Base64;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.Properties;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -14,9 +14,16 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.gherkin.model.Feature;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+
+import io.cucumber.java.Scenario;
 
 
 public class ExtentReportListners  implements ITestListener {
@@ -25,6 +32,8 @@ public class ExtentReportListners  implements ITestListener {
 	private static WebDriver driverFinal;
 	public static ExtentReports reports;
 	public static ExtentTest test ;
+	Scenario scenario;
+	int i = 1;
 
 
 	private static String resultpath = getResultPath();
@@ -48,6 +57,7 @@ public class ExtentReportListners  implements ITestListener {
 	}
 
 	private static String getResultPath() {
+
 		Calendar cal = Calendar.getInstance();
 		SimpleDateFormat simpleformat = new SimpleDateFormat("dd MMM yyyy HH:mm:ss");
 		String date = simpleformat.format(cal.getTime());
@@ -68,18 +78,21 @@ public class ExtentReportListners  implements ITestListener {
 	//String ReportLocation = "test-output/Report/" + resultpath + "/";
 
 
-	public void onTestStart(ITestResult result) {
+	public void onTestStart(ITestResult result ) {
+		reports.addSystemInfo("os", "win7");
+		
 
-		test = reports.startTest(result.getMethod().getMethodName());
-		test.log(LogStatus.INFO,"Test Start");
-		test.log(LogStatus.INFO, result.getMethod().getMethodName());	
+//		test = reports.startTest(result.getMethod().getMethodName().concat(" = " +i+""));
+		//i++;
+//		test.log(LogStatus.INFO,"Test Start");
+//		test.log(LogStatus.INFO, result.getMethod().getMethodName());	
 	}
 
 	public void onTestSuccess(ITestResult result) {
 		test.log(LogStatus.PASS, "Test is pass");
 		try {
 			//Thread.sleep(1000);
-			sscapture();
+			//			sscapture();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			System.out.println("");
@@ -130,9 +143,9 @@ public class ExtentReportListners  implements ITestListener {
 	}
 	public static  void sscapture() throws Exception
 	{
-//		FileInputStream fis = new FileInputStream("./src/test/resources/propertiesFile/login.properties");
-//		Properties prop = new Properties();
-//		prop.load(fis);
+		//		FileInputStream fis = new FileInputStream("./src/test/resources/propertiesFile/login.properties");
+		//		Properties prop = new Properties();
+		//		prop.load(fis);
 		Thread.sleep(500);
 		String screenshotPath = getScreenshot(base.driver, "testing");
 		//System.out.println(screenshotPath);
@@ -155,4 +168,12 @@ public class ExtentReportListners  implements ITestListener {
 		encodedBase64 = new String(Base64.getEncoder().encodeToString(bytes));
 		return "data:image/png;base64,"+encodedBase64;
 	}
+
+
+
+
+
+
+
+
 }

@@ -2,20 +2,28 @@ package smoke;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeMethod;
 
 import Utitlities.ConfigListner;
+import Utitlities.ExtentReportListners;
 import Utitlities.base;
+import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class Login extends base{
-	WebDriver driver;
+	public static WebDriver driver;
 
 	@Given("Open the website {string}")
 	public void open_the_website(String string) throws Exception {
+
+		System.out.println(ConfigListner.getLoginConfigData("username"));
 		driver = base.openTerminal(string);
 		System.out.println("open_the_website");
+		log("open_the_website = UAT Env");
+		reporter("the_user_opens_the_website = "+string);
 	}
 
 	@When("Enter {string} into enter email mobile and click on OTP")
@@ -26,7 +34,7 @@ public class Login extends base{
 		driver.navigate().refresh();
 
 		//Login Page
-		driver.findElement(By.xpath("//input[@id='_com_liferay_login_web_portlet_LoginPortlet_login']")).sendKeys(ConfigListner.getConfigData("username"));
+		driver.findElement(By.xpath("//input[@id='_com_liferay_login_web_portlet_LoginPortlet_login']")).sendKeys(ConfigListner.getLoginConfigData("username"));
 
 		//OTP
 		driver.findElement(By.xpath("//a[@class='otps']")).click();

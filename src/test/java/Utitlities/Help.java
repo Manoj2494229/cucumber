@@ -26,6 +26,11 @@ public class Help extends ExtentReportListners{
 	static base bs = new base();
 
 	public static void clickElement(WebDriver driver, final By locator) throws Exception {
+		
+		
+		// explicit wait - to wait for the compose button to be click-able
+//		WebDriverWait webdwait = new WebDriverWait(driver, Duration.ofSeconds(20));
+//		webdwait.until(ExpectedConditions.elementToBeClickable(locator));
 
 		base.log("clickElement " +locator);
 		Wait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver)
@@ -43,6 +48,7 @@ public class Help extends ExtentReportListners{
 				);	
 
 		//driver.navigate().refresh();
+
 		Thread.sleep(1000);
 		element.click();
 
@@ -50,9 +56,13 @@ public class Help extends ExtentReportListners{
 	}
 
 	public static void enterText(WebDriver driver, final By locator, String text)throws Exception  {
+
+
 		base.log("enterText " +locator +" and message =  "+text);
 		System.out.println(text);
 		Help.clickElement(driver, locator);
+
+
 
 		Wait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver)
 				.withTimeout(Duration.ofMillis(10000)) // this defines the total amount of time to wait for
@@ -76,6 +86,14 @@ public class Help extends ExtentReportListners{
 		//		.sendKeys(text)
 		//		.perform();
 		System.out.println(element.getText());
+		
+		
+		
+		// explicit wait - to wait for the compose button to be click-able
+		WebDriverWait webdwait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		webdwait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		
+		
 		//Thread.sleep(1000);
 		element.clear();
 		element.click();
@@ -133,7 +151,7 @@ public class Help extends ExtentReportListners{
 	}
 
 	public static String generateRandomString(int length) {
-		
+
 		String characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 		StringBuilder sb = new StringBuilder(length);
 		Random random = new Random();

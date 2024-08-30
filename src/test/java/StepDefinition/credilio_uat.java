@@ -17,7 +17,7 @@ public class credilio_uat {
 	static String leadId = "";
 	static String AppleadId = "";
 	@Given("fill the lead form with  {string} ,  {string} ,{string} , {string} ,{string} ,{string} detailes IN UAT")
-	public void fill_the_lead_form_with_detailes_in_uat(String string, String string2, String string3, String string4, String string5, String string6) {
+	public void fill_the_lead_form_with_detailes_in_uat(String string, String string2, String string3, String string4, String string5, String string6) throws Exception {
 		//initialise logger
 		log.fatal("Setup1 executed...");
 				System.setProperty("http.proxyHost", "proxy.tcs.com");
@@ -29,7 +29,7 @@ public class credilio_uat {
 		AppleadId = AlphaNumericString;
 		System.out.println(AlphaNumericString);
 		RestAssured.useRelaxedHTTPSValidation();
-		String BaseURI = "https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-create-order/v1.0/clickOutWebhook";
+		String BaseURI = "https://webserver-vil-sit.lfr.cloud/o/vil-headless-create-order/v1.0/clickOutWebhook";
 		//System.out.println(BaseURI);
 		Response resp1 = RestAssured.given().
 				auth().
@@ -46,12 +46,13 @@ public class credilio_uat {
 		System.out.println(output.prettify());
 		//SELECT request  from VIL_ApiLogging WHERE request like '%836939306%' and url like '%/o/vil-headless-create-order/v1.0/createOrder%';
 		log.info("Callback 1 --> fill_the_lead_form_with_detailes_in_uat Done");
+Thread.sleep(2000);
 	}
 
 
 	@Given("hit clickOutWebhook_APPLICATION_STATUS_UPDATION with card as a {string} and  {string} and {string} IN UAT")
 	public void hit_click_out_webhook_application_status_updation_with_card_as_a_and_and_in_uat(String string, String string2, String string3) throws Exception {
-		String BaseURI = "https://webserver-vil-uatnew.lfr.cloud/o/vil-headless-create-order/v1.0/clickOutWebhook";
+		String BaseURI = "https://webserver-vil-sit.lfr.cloud/o/vil-headless-create-order/v1.0/clickOutWebhook";
 		//System.out.println(BaseURI);
 		Response resp1 = RestAssured.given().
 				auth().
@@ -85,7 +86,7 @@ public class credilio_uat {
 				+ "        \"pincode\": "+pincode+",\r\n"
 				+ "        \"product\": \"CREDIT_CARD\",\r\n"
 				+ "        \"createdAt\": \"2024-06-07 04:36:01\",\r\n"
-				+ "        \"customerId\": \"1000041801\",\r\n"
+				+ "        \"customerId\": \"1000098802\",\r\n"
 				+ "        \"journeyType\": \"CUSTOMER\",\r\n"
 				+ "        \"bureauProfile\": \"EXCELLENT\",\r\n"
 				+ "        \"primaryMobile\": "+primaryMobile+",\r\n"

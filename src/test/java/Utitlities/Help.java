@@ -211,6 +211,13 @@ public class Help extends ExtentReportListners{
 		Thread.sleep(200);
 		sscapture();
 	}
+	public static void reporterAPI(String message) throws Exception
+	{
+		base.log("reporter " +message);
+		test.log(LogStatus.INFO, "Log = "+ message);
+		//System.out.println(message);
+		Thread.sleep(200);
+	}
 
 
 	public static void allOption(WebDriver driver, By locator , By iframeElement) throws Exception

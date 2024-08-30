@@ -28,10 +28,10 @@ public class base extends Help{
 
 	public static  WebDriver openTerminal(String url) throws Exception
 	{
-		System.setProperty("http.proxyHost", "proxy.tcs.com");
-		System.setProperty("http.proxyPort", "8080");
-		System.setProperty("https.proxyHost", "proxy.tcs.com");
-		System.setProperty("https.proxyPort", "8080");
+//		System.setProperty("http.proxyHost", "proxy.tcs.com");
+//		System.setProperty("http.proxyPort", "8080");
+//		System.setProperty("https.proxyHost", "proxy.tcs.com");
+//		System.setProperty("https.proxyPort", "8080");
 		ChromeOptions options = new ChromeOptions();
 		WebDriverManager.chromedriver ().clearDriverCache ();
 		options.addArguments("--remote-allow-origins=*");

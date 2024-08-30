@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>11/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Aug 26 17:13:17 IST 2024</td>
+<td>Started on:</td><td>Fri Aug 30 17:43:40 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>59 seconds (59211 ms)</td>
+<tr><td>Total time:</td><td>361 seconds (361903 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,192 +75,85 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestRunner.testRunner_smoke.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner_smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Fill up the simple product configuration page", "Product Journey"</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=127.0.6533.120)
-Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
-System info: host: &apos;01HW2086661&apos;, ip: &apos;10.88.16.206&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6a075c212c3a45bf3e77de143ff9122a, clickElement {id=f.43629093947BEAC113BE7576B00F3F4D.d.10A19A8D574FD9E8864C5950C527D707.e.200}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:/Users/2494229/AppData/Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56517}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56517/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (6a075c212c3a45bf3e77de143ff9122a)] -&gt; xpath: //a[normalize-space()=&apos;Product List&apos;]]
-Session ID: 6a075c212c3a45bf3e77de143ff9122a
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at Utitlities.Help.clickElement(Help.java:53)
-	at smoke.simple_Product_Configuration.the_user_clicks_on_the_product_list_tab(simple_Product_Configuration.java:38)
-	at ✽.the user clicks on the Product List tab(file:///C:/Users/2494229/OneDrive%20-%20TCS%20COM%20PROD/Manoj_Bhole/Automation/git_cucumber/git/cucumber/./Features/smoke/product_Journey.feature:9)
-</pre></div><a href='#' onClick='toggleBox("stack-trace17435166", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace17435166'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=127.0.6533.120)
-Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
-System info: host: &apos;01HW2086661&apos;, ip: &apos;10.88.16.206&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6a075c212c3a45bf3e77de143ff9122a, clickElement {id=f.43629093947BEAC113BE7576B00F3F4D.d.10A19A8D574FD9E8864C5950C527D707.e.200}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:/Users/2494229/AppData/Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56517}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56517/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (6a075c212c3a45bf3e77de143ff9122a)] -&gt; xpath: //a[normalize-space()=&apos;Product List&apos;]]
-Session ID: 6a075c212c3a45bf3e77de143ff9122a
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at Utitlities.Help.clickElement(Help.java:53)
-	at smoke.simple_Product_Configuration.the_user_clicks_on_the_product_list_tab(simple_Product_Configuration.java:38)
-	at ✽.the user clicks on the Product List tab(file:///C:/Users/2494229/OneDrive%20-%20TCS%20COM%20PROD/Manoj_Bhole/Automation/git_cucumber/git/cucumber/./Features/smoke/product_Journey.feature:9)
+<td title='TestRunner.testRunner_smoke.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner_smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Buy Journey of LR API via Express Checkout", "API Journey"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.trim()&quot; because &quot;in&quot; is null
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1838)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at smoke.buy_Journey.the_user_receives_an_updated_order_status_from_the_partner_using_the_update_order_api(buy_Journey.java:127)
+	at ✽.the user receives an updated order status from the partner using the updateOrder API(file:///C:/Users/2494229/OneDrive%20-%20TCS%20COM%20PROD/Manoj_Bhole/Automation/git_cucumber/git/cucumber/./Features/smoke/TC_05_api_Journey.feature:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace725603538", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace725603538'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.trim()&quot; because &quot;in&quot; is null
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1838)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at smoke.buy_Journey.the_user_receives_an_updated_order_status_from_the_partner_using_the_update_order_api(buy_Journey.java:127)
+	at ✽.the user receives an updated order status from the partner using the updateOrder API(file:///C:/Users/2494229/OneDrive%20-%20TCS%20COM%20PROD/Manoj_Bhole/Automation/git_cucumber/git/cucumber/./Features/smoke/TC_05_api_Journey.feature:21)
 </pre></div></td>
-<td>12</td>
+<td>1</td>
+<td>TestRunner.testRunner_smoke@14028087</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestRunner.testRunner_smoke.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner_smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify User Can Add Review to a Product", "API Journey"</td>
+<td></td>
+<td>0</td>
 <td>TestRunner.testRunner_smoke@14028087</td></tr>
 <tr>
-<td title='TestRunner.testRunner_smoke.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner_smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Approve the lead form", "Login"</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=127.0.6533.120)
-Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
-System info: host: &apos;01HW2086661&apos;, ip: &apos;10.88.16.206&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [38083f6c8f538baf11d223f30692ba6c, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:/Users/2494229/AppData/Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56446}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56446/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 38083f6c8f538baf11d223f30692ba6c
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:610)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)
-	at Utitlities.ExtentReportListners.getScreenshot(ExtentReportListners.java:155)
-	at Utitlities.ExtentReportListners.sscapture(ExtentReportListners.java:147)
-	at Utitlities.Help.reporter(Help.java:212)
-	at smoke.leadFormApproved.click_on_partner_leads_task_tab(leadFormApproved.java:29)
-	at ✽.Click on Partner Leads Task tab(file:///C:/Users/2494229/OneDrive%20-%20TCS%20COM%20PROD/Manoj_Bhole/Automation/git_cucumber/git/cucumber/./Features/smoke/lead_Journey.feature:27)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2102224373", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2102224373'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=127.0.6533.120)
-Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
-System info: host: &apos;01HW2086661&apos;, ip: &apos;10.88.16.206&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [38083f6c8f538baf11d223f30692ba6c, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:/Users/2494229/AppData/Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56446}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56446/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 38083f6c8f538baf11d223f30692ba6c
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:610)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)
-	at Utitlities.ExtentReportListners.getScreenshot(ExtentReportListners.java:155)
-	at Utitlities.ExtentReportListners.sscapture(ExtentReportListners.java:147)
-	at Utitlities.Help.reporter(Help.java:212)
-	at smoke.leadFormApproved.click_on_partner_leads_task_tab(leadFormApproved.java:29)
-	at ✽.Click on Partner Leads Task tab(file:///C:/Users/2494229/OneDrive%20-%20TCS%20COM%20PROD/Manoj_Bhole/Automation/git_cucumber/git/cucumber/./Features/smoke/lead_Journey.feature:27)
-</pre></div></td>
-<td>12</td>
+<td title='TestRunner.testRunner_smoke.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner_smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Customer Registration Journey", "API Journey"</td>
+<td></td>
+<td>0</td>
+<td>TestRunner.testRunner_smoke@14028087</td></tr>
+<tr>
+<td title='TestRunner.testRunner_smoke.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner_smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify User Can View Products in VI_SHOP", "API Journey"</td>
+<td></td>
+<td>0</td>
+<td>TestRunner.testRunner_smoke@14028087</td></tr>
+<tr>
+<td title='TestRunner.testRunner_smoke.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner_smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify User Can View Searched Keyword History in VI_SHOP", "API Journey"</td>
+<td></td>
+<td>0</td>
+<td>TestRunner.testRunner_smoke@14028087</td></tr>
+<tr>
+<td title='TestRunner.testRunner_smoke.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner_smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create and Submit a New Fixed Amount Discount", "Discount Management"</td>
+<td></td>
+<td>77</td>
+<td>TestRunner.testRunner_smoke@14028087</td></tr>
+<tr>
+<td title='TestRunner.testRunner_smoke.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner_smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify User Can View Categories and Subcategories in VI_SHOP", "API Journey"</td>
+<td></td>
+<td>0</td>
+<td>TestRunner.testRunner_smoke@14028087</td></tr>
+<tr>
+<td title='TestRunner.testRunner_smoke.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner_smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create and Submit a New Percentage Discount", "Discount Management"</td>
+<td></td>
+<td>78</td>
+<td>TestRunner.testRunner_smoke@14028087</td></tr>
+<tr>
+<td title='TestRunner.testRunner_smoke.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner_smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Buy Journey of LR API via Add to Cart", "API Journey"</td>
+<td></td>
+<td>7</td>
+<td>TestRunner.testRunner_smoke@14028087</td></tr>
+<tr>
+<td title='TestRunner.testRunner_smoke.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner_smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create and Submit a New BuyX-GetY Discount", "Discount Management"</td>
+<td></td>
+<td>86</td>
 <td>TestRunner.testRunner_smoke@14028087</td></tr>
 <tr>
 <td title='TestRunner.testRunner_smoke.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner_smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Fill up the lead form and submit", "Login"</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=127.0.6533.120)
-Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
-System info: host: &apos;01HW2086661&apos;, ip: &apos;10.88.16.206&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [46a844950e6cd97ef9e961efb7b19ab8, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:/Users/2494229/AppData/Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56321}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56321/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 46a844950e6cd97ef9e961efb7b19ab8
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:610)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)
-	at Utitlities.ExtentReportListners.getScreenshot(ExtentReportListners.java:155)
-	at Utitlities.ExtentReportListners.sscapture(ExtentReportListners.java:147)
-	at Utitlities.Help.reporter(Help.java:212)
-	at smoke.leadFormSubmit.the_user_selects(leadFormSubmit.java:82)
-	at ✽.the user selects &quot;News&quot;(file:///C:/Users/2494229/OneDrive%20-%20TCS%20COM%20PROD/Manoj_Bhole/Automation/git_cucumber/git/cucumber/./Features/smoke/lead_Journey.feature:14)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1196877260", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1196877260'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=127.0.6533.120)
-Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
-System info: host: &apos;01HW2086661&apos;, ip: &apos;10.88.16.206&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [46a844950e6cd97ef9e961efb7b19ab8, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:/Users/2494229/AppData/Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56321}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56321/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 46a844950e6cd97ef9e961efb7b19ab8
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:610)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)
-	at Utitlities.ExtentReportListners.getScreenshot(ExtentReportListners.java:155)
-	at Utitlities.ExtentReportListners.sscapture(ExtentReportListners.java:147)
-	at Utitlities.Help.reporter(Help.java:212)
-	at smoke.leadFormSubmit.the_user_selects(leadFormSubmit.java:82)
-	at ✽.the user selects &quot;News&quot;(file:///C:/Users/2494229/OneDrive%20-%20TCS%20COM%20PROD/Manoj_Bhole/Automation/git_cucumber/git/cucumber/./Features/smoke/lead_Journey.feature:14)
-</pre></div></td>
-<td>31</td>
+<td></td>
+<td>44</td>
+<td>TestRunner.testRunner_smoke@14028087</td></tr>
+<tr>
+<td title='TestRunner.testRunner_smoke.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner_smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Approve the lead form", "Login"</td>
+<td></td>
+<td>62</td>
 <td>TestRunner.testRunner_smoke@14028087</td></tr>
 </table><p>
 </body>

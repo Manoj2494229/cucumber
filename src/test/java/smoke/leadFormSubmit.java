@@ -109,7 +109,7 @@ public class leadFormSubmit extends base{
 	public void the_form_should_be_submitted_successfully() throws Exception{
 
 		System.out.println("the_form_should_be_submitted_successfully");
-		reporter("the_form_should_be_submitted_successfully = ");
+		reporter("the_form_should_be_submitted_successfully  ");
 		//driver.close();
 	}
 	

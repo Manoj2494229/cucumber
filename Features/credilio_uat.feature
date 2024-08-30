@@ -3,7 +3,7 @@ Feature: check the lead journey for  in UAT
   @AXIS_008
   Scenario Outline: Check response from credilio for successfully issued credit card in UAT for AXIS_008
     Given fill the lead form with  "<pan>" ,  "<name>" ,"<income>" , "<pincode>" ,"<primaryMobile>" ,"<employmentType>" detailes IN UAT
-    And hit clickOutWebhook_APPLICATION_STATUS_UPDATION with card as a "AXIS_008" and  "<status>" and "<subStatus>" IN UAT
+    And hit clickOutWebhook_APPLICATION_STATUS_UPDATION with card as a "AXIS_014" and  "<status>" and "<subStatus>" IN UAT
 
     Examples: 
       | pan        | name        | income | pincode | primaryMobile | employmentType | status                 | subStatus                                                                                   |

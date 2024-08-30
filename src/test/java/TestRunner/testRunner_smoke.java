@@ -16,7 +16,7 @@ import io.cucumber.testng.CucumberOptions;
 		glue="smoke",
 		dryRun = false,
 		monochrome = true,
-		tags = "@smoke",//scenarios under @sanity tag will be executed
+		tags = "@smoke or @API",//scenarios under @sanity tag will be executed
 		plugin = {"pretty","html:target/cucumber-reports/reports_html.html"}
 		)
 

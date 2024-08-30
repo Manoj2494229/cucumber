@@ -23,6 +23,7 @@ public class TokenListner {
 
 			token = resp.jsonPath().get("access_token");
 			RestAssured.useRelaxedHTTPSValidation();
+			base.log("Token added SIT");
 		}else if (URI.contains("uat"))
 		{
 			//System.out.println("please enter valid UAT");
@@ -31,10 +32,11 @@ public class TokenListner {
 					formParam("client_id", "id-d256f865-f2b7-c3b2-3070-ffaf4e82c19").
 					formParam("client_secret", "secret-b96bb018-fa2d-e586-72ab-2d05f4ba077").
 					formParam("grant_type", "client_credentials").
-					post("https://webserver-vil-uatnew.lfr.cloud/o/oauth2/token");
+					post("https://vishopuat.myvi.in/o/oauth2/token");
 			token = resp.jsonPath().get("access_token");
 			//System.out.println(token);
 			RestAssured.useRelaxedHTTPSValidation();
+			base.log("Token added UAT");
 		}else if (URI.contains("dev"))
 		{
 			Response resp = RestAssured.
@@ -48,12 +50,13 @@ public class TokenListner {
 			//System.out.println(token);
 
 			RestAssured.useRelaxedHTTPSValidation();
-
+			base.log("Token added DEV");
 		}else
 		{
 			System.out.println("Enter Valid Token");
+			base.log("Enter Valid Token");
 		}
-		//log.info("Token added ");
+		
 		return token;
 
 			

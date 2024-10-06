@@ -52,3 +52,19 @@ Feature: API Journey
     And the user views subcategories within a main category using the getChildCategories API
     And the user views a specific category by name using the getVocabularyCategoriesByName API
     And the user views a specific category by ID using the getVocabularyCategoriesById API
+
+  # This scenario verifies the all the API  within VI_SHOP.
+  @fetch_ALL_API @API
+  Scenario: Fetch ALL API and check status code and health status.
+    When hit api all api within VI SHOP
+    And check status code and Health Check
+
+  # This scenario verifies the all WishList Functionilty
+  @WishList @API
+  Scenario: WishList Functionilty
+    When Create blank Wishlist with name (ABCD)
+    And user Add item to the (ABCD) Wishlist
+    And user remove item from (ABCD) Wishlist
+    And user get list all Wishlist for ourself created
+    And user get all Wishlist Items from (ABCD)
+    And user Delete Wishlist (ABCD)

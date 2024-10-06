@@ -5,7 +5,7 @@ import com.github.javafaker.Faker;
 public class leadJourney_payload {
 
 	
-	public static String payload(String leadId , String pan, String name, String income, String pincode, String primaryMobile)
+	public static String payload_LEAD_CREATION(String leadId , String pan, String name, String income, String pincode, String primaryMobile)
 	{
 		String data = "{\r\n"
 				+ "    \"data\": {\r\n"
@@ -31,7 +31,7 @@ public class leadJourney_payload {
 				+ "}";
 		return data;
 	}
-	public static String payloadupdate(String leadId , String status , String subStatus)
+	public static String payloadupdate_APPLICATION_STATUS_UPDATION(String leadId , String status , String subStatus)
 	{
 		String data = "{\r\n"
 				+ "    \"type\": \"APPLICATION_STATUS_UPDATION\",\r\n"
@@ -68,5 +68,6 @@ public class leadJourney_payload {
 				+ "}";
 		return data;
 	}
+
 
 }

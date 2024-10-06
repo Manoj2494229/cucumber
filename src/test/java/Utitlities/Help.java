@@ -213,7 +213,8 @@ public class Help extends ExtentReportListners{
 	}
 	public static void reporterAPI(String message) throws Exception
 	{
-		base.log("reporter " +message);
+		
+		bs.log("reporter " +message);
 		test.log(LogStatus.INFO, "Log = "+ message);
 		//System.out.println(message);
 		Thread.sleep(200);

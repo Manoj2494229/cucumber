@@ -16,6 +16,7 @@ public class readExcelConfig {
 
 	public static String getBaseURI(int apinumber ,int dataHead ) throws Exception
 	{	
+		
 		FileInputStream fis = new FileInputStream("./src/test/resource/excel/testdata.xlsx");
 		//Create workbook object by using workbookfacory
 		Workbook wb = WorkbookFactory.create(fis);
@@ -30,10 +31,10 @@ public class readExcelConfig {
 					dxlApi.put(i, s1.getRow(i).getCell(j).getStringCellValue());
 				}catch(Exception e)
 				{
-
 				}
 			}	
 		}
+		base.log("readExcelConfig -- getBaseURI -- ./src/test/resource/excel/testdata.xlsx");
 		return dxlApi.get(apinumber).trim();
 	}
 
@@ -57,6 +58,7 @@ public class readExcelConfig {
 				}
 			}	
 		}
+		base.log("readExcelConfig -- getLeadData -- ./src/test/resource/excel/leadData.xlsx");
 		return dxlApi.get(sr);
 	}
 
@@ -81,6 +83,7 @@ public class readExcelConfig {
 		}
 		return listdata;
 	}
+	
 	public static void updateData(String Query ,  String filePath) {
 		try {
 			Fillo fillo = new Fillo();
@@ -93,6 +96,7 @@ public class readExcelConfig {
 			e.printStackTrace();
 		}
 	}
+	
 	
 	//read file for credilio code
 	public static String generate_leadID(String Query , String Key , int num) throws Exception
@@ -117,7 +121,4 @@ public class readExcelConfig {
 		}
 		return listdata.get(num);
 	}
-	
-
-
 }

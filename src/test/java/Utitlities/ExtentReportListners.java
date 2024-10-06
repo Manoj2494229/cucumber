@@ -2,6 +2,7 @@ package Utitlities;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Base64;
 import java.util.Calendar;
@@ -21,12 +22,14 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.gherkin.model.Feature;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.HTMLReporter;
 import com.relevantcodes.extentreports.LogStatus;
 
 import io.cucumber.java.Scenario;
 
 
 public class ExtentReportListners  implements ITestListener {
+	public static String reportName = null;
 
 
 	private static WebDriver driverFinal;
@@ -80,9 +83,7 @@ public class ExtentReportListners  implements ITestListener {
 
 	public void onTestStart(ITestResult result ) {
 		reports.addSystemInfo("os", "win7");
-		
-
-//		test = reports.startTest(result.getMethod().getMethodName().concat(" = " +i+""));
+		//test = reports.startTest(result.getMethod().getMethodName().concat(" = " +i+""));
 		//i++;
 //		test.log(LogStatus.INFO,"Test Start");
 //		test.log(LogStatus.INFO, result.getMethod().getMethodName());	
@@ -126,17 +127,27 @@ public class ExtentReportListners  implements ITestListener {
 	}
 
 	public void onStart(ITestContext context) {
-		Calendar cal = Calendar.getInstance();
-		SimpleDateFormat simpleformat = new SimpleDateFormat("dd MMM yyyy HH:mm:ss");
-		String date = simpleformat.format(cal.getTime());
-		String date1 = date.replace(" ", "_");
-		String date2 = date1.replace(":", "_");
-		System.out.println(ReportLocation + "  ReportLocation");
-		reports = new ExtentReports(ReportLocation + "Vi_Marketplace_And_Ecom_Automation_Report_"+date2+".html");
+		try {
+			Calendar cal = Calendar.getInstance();
+			SimpleDateFormat simpleformat = new SimpleDateFormat("dd MMM yyyy HH:mm:ss");
+			String date = simpleformat.format(cal.getTime());
+			String date1 = date.replace(" ", "_");
+			String date2 = date1.replace(":", "_");
+			System.out.println(ReportLocation + "  ReportLocation");
+			reportName = ReportLocation + "Vi_Marketplace_And_Ecom_Automation_Report_"+date2+".html";
+			System.out.println(reportName);
+			reports = new ExtentReports(reportName);
+			//reports.loadConfig(new File("./src/test/resources/extent-config.xml"));
+
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		
 		//test = reports.startTest("");	
 	}
 
 	public void onFinish(ITestContext context) {
+
 		test.log(LogStatus.INFO, "Test End");
 		reports.endTest(test);
 		reports.flush();

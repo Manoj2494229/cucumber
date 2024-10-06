@@ -1,7 +1,7 @@
 Feature: Product Journey
 
-  @smoke1
-  Scenario: Fill up the simple product configuration page
+  @smoke
+    Scenario: Fill up the simple product configuration page
     Given Open the website "https://webserver-vil-uatnew.lfr.cloud"
     When Enter "vitechadmin2@liferay.com" into enter email mobile and click on OTP
     And Enter four time "1" into OTP section

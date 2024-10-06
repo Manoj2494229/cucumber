@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>ExtentReports</title>
+
+	<style type='text/css'>
+	</style>
+</head>
+
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>ExtentReports</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Sep 2, 2024 06:54:23 PM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>3.1.2</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>Parent Test</span>
+						<span class='test-time'>Sep 2, 2024 06:54:23 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 2, 2024 06:54:23 PM</span>
+	<span class='label end-time'>Sep 2, 2024 06:54:23 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+2ms</span>
+</div>
+	<div class='test-desc'>Description of Parent Test </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:54:23 PM</td>
+					<td class='step-details'>This is the parent test</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='5'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Child Test</h5>
+						<span class="node-time label grey lighten-1 white-text">Sep 2, 2024 06:54:23 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+2ms</span>
+						<span class='test-status right pass'>pass</span>
+							<div class='node-desc'>Description of Child Test</div>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>6:54:23 PM</td>
+													<td class='step-details'><pre>{<br>    "apiResponse": {<br>        "message": "Request Processed Successfully",<br>        "responseId": "AND10301712038883538",<br>        "status": "Success",<br>        "statusCode": "MP100"<br>    },<br>    "data": {<br>        "end": 10,<br>        "facets": {<br>            "categories": [<br>                {<br>                    "categoryId": 63677,<br>                    "categoryName": "OTT",<br>                    "count": 5<br>                },<br>                {<br>                    "categoryId": 1658681,<br>                    "categoryName": "Amazon_Gift_Card",<br>                    "count": 2<br>                },<br>                {<br>                    "categoryId": 1660964,<br>                    "categoryName": "Manoj_Testing_Space",<br>                    "count": 2<br>                },<br>                {<br>                    "categoryId": 63702,<br>                    "categoryName": "Entertainment Gift Card",<br>                    "count": 1<br>                },<br>                {<br>                    "categoryId": 63771,<br>                    "categoryName": "Newspaper Subscription",<br>                    "count": 1<br>                },<br>                {<br>                    "categoryId": 63866,<br>                    "categoryName": "Device Protection Gift Card",<br>                    "count": 1<br>                }<br>            ],<br>            "discounts": [<br>                {<br>                    "count": 10,<br>                    "range": "[0 TO 100]"<br>                },<br>                {<br>                    "count": 1,<br>                    "range": "[10 TO 100]"<br>                },<br>                {<br>                    "count": 1,<br>                    "range": "[20 TO 100]"<br>                },<br>                {<br>                    "count": 1,<br>                    "range": "[30 TO 100]"<br>                },<br>                {<br>                    "count": 1,<br>                    "range": "[40 TO 100]"<br>                },<br>                {<br>                    "count": 1,<br>                    "range": "[50 TO 100]"<br>                }<br>            ],<br>            "prices": [<br>                {<br>                    "count": 10,<br>                    "range": "[0 TO 99999]"<br>                }<br>            ],<br>            "rating": [<br>                {<br>                    "average": "4",<br>                    "count": 3<br>                }<br>            ],<br>            "specifications": [<br>                <br>            ],<br>            "tags": [<br>                {<br>                    "count": 6,<br>                    "tagName": "test duplicate"<br>                },<br>                {<br>                    "count": 6,<br>                    "tagName": "testing"<br>                },<br>                {<br>                    "count": 4,<br>                    "tagName": "offer of the day"<br>                },<br>                {<br>                    "count": 4,<br>                    "tagName": "tagnew"<br>                }<br>            ]<br>        },<br>        "products": [<br>            {<br>                "attachments": [<br>                    {<br>                        "contentType": "png",<br>                        "imagePriority": 0.0,<br>                        "name": "GYFTER.png",<br>                        "type": 0,<br>                        "url": "https://vishopuat.myvi.in/documents/5985759/0/GYFTER.png"<br>                    },<br>                    {<br>                        "contentType": "webp",<br>                        "imagePriority": 1.0,<br>                        "name": "priority1.webp",<br>                        "type": 0,<br>                        "url": "https://vishopuat.myvi.in/documents/5985759/0/priority1.webp"<br>                    },<br>                    {<br>                        "contentType": "webp",<br>                        "imagePriority": 2.0,<br>                        "name": "priority2.webp",<br>                        "type": 0,<br>                        "url": "https://vishopuat.myvi.in/documents/5985759/0/priority2.webp"<br>                    }<br>                ],<br>                "brandName": "",<br>                "buyForOthers": true,<br>                "categories": [<br>                    {<br>                        "categoryId": 63866,<br>                        "categoryName": "Device Protection Gift Card"<br>                    }<br>                ],<br>                "circle": {<br>                    <br>                },<br>                "consentFlag": false,<br>                "discounts": {<br>                    <br>                },<br>                "duration": 0,<br>                "isLeadProduct": false,<br>                "isWishListed": false,<br>                "name": "Gyfter_Hard_Bundle",<br>                "productFlavor": "AmazonGiftCard",<br>                "productId": 8122645,<br>                "productType": "bundle",<br>                "rating": {<br>                    "averageRating": 0,<br>                    "ratingType": "Overall",<br>                    "totalRatingCount": 0,<br>                    "totalReviewCount": 0<br>                },<br>                "shortDescription": "//ul AGC Access upto 1 lakhs+ hours of content\n//ul AGC Exclusive release of blockbuster movies & Netflix series specials\n//ul AGC Best-in-class playback technology for the smoothest viewing experience",<br>                "skuDetails": {<br>                    "basePrice": 600.00,<br>                    "inventory": 1003,<br>                    "netPrice": 221.00,<br>                    "partnerId": 240500001,<br>                    "partnerLogoUrl": "https://vishopuat.myvi.in/documents/48335/0/company-logo-1.png",<br>                    "partnerName": "Gyftr",<br>                    "salePrice": 221.00,<br>                    "skuId": 8122649,<br>                    "skuName": "BundledSKU (8122645)"<br>                },<br>                "tags": [<br>                    {<br>                        "tagName": "offer of the day"<br>                    },<br>                    {<br>                        "tagName": "testing"<br>                    },<br>                    {<br>                        "tagName": "test duplicate"<br>                    },<br>                    {<br>                        "tagName": "tagnew"<br>                    }<br>                ],<br>                "termsConditions": "//ul TNC Access upto 1 lakhs+ hours of content\n//ul TNC Exclusive release of blockbuster movies & Netflix series specials\n//ul TNC Best-in-class playback technology for the smoothest viewing experience\n//ul TNC Watch the shows/movies on the go by downloading them\n//ul TNC Best-in-class playback technology for the smoothest viewing experience",<br>                "validityType": " "<br>            },<br>            {<br>                "attachments": [<br>                    <br>                ],<br>                "brandName": "",<br>                "buyForOthers": true,<br>                "categories": [<br>                    {<br>                        "categoryId": 1660964,<br>                        "categoryName": "Manoj_Testing_Space"<br>                    },<br>                    {<br>                        "categoryId": 601253,<br>                        "categoryName": "Rating4Star"<br>                    }<br>                ],<br>                "circle": {<br>                    <br>                },<br>                "consentFlag": false,<br>                "discounts": {<br>                    <br>                },<br>                "duration": 1,<br>                "isLeadProduct": false,<br>                "isWishListed": false,<br>                "name": "Razorpay hard bundle",<br>                "productFlavor": "",<br>                "productId": 7078712,<br>                "productType": "bundle",<br>                "rating": {<br>                    "averageRating": 0,<br>                    "ratingType": "Overall",<br>                    "totalRatingCount": 0,<br>                    "totalReviewCount": 0<br>                },<br>                "shortDescription": "Razorpay hard bundle",<br>                "skuDetails": {<br>                    "basePrice": 2100.00,<br>                    "inventory": 145,<br>                    "netPrice": 130.00,<br>                    "partnerId": 231200013,<br>                    "partnerLogoUrl": "https://vishopuat.myvi.in/documents/48335/0/razorpay_logo.jpg",<br>                    "partnerName": "Razor Pay",<br>                    "salePrice": 130.00,<br>                    "skuId": 7078716,<br>                    "skuName": "BundledSKU (7078712)"<br>                },<br>                "tags": [<br>                    {<br>                        "tagName": "offer of the day"<br>                    },<br>                    {<br>                        "tagName": "testing"<br>                    },<br>                    {<br>                        "tagName": "test duplicate"<br>                    },<br>                    {<br>                        "tagName": "tagnew"<br>                    }<br>                ],<br>                "termsConditions": "",<br>                "validityType": "months"<br>            },<br>            {<br>                "attachments": [<br>                    <br>                ],<br>                "brandName": "",<br>                "buyForOthers": true,<br>                "categories": [<br>                    {<br>                        "categoryId": 1660964,<br>                        "categoryName": "Manoj_Testing_Space"<br>                    },<br>                    {<br>                        "categoryId": 601253,<br>                        "categoryName": "Rating4Star"<br>                    }<br>                ],<br>                "circle": {<br>                    <br>                },<br>                "consentFlag": false,<br>                "discounts": {<br>                    <br>                },<br>                "duration": 3,<br>                "isLeadProduct": false,<br>                "isWishListed": false,<br>                "name": "Telco grouped product",<br>                "productFlavor": "telco",<br>                "productId": 8430536,<br>                "productType": "bundle",<br>                "rating": {<br>                    "averageRating": 0,<br>                    "ratingType": "Overall",<br>                    "totalRatingCount": 0,<br>                    "totalReviewCount": 0<br>                },<br>                "shortDescription": "Telco grouped product",<br>                "skuDetails": {<br>                    "basePrice": 2100.00,<br>                    "inventory": 145,<br>                    "netPrice": 130.00,<br>                    "partnerId": 231200013,<br>                    "partnerLogoUrl": "https://vishopuat.myvi.in/documents/48335/0/razorpay_logo.jpg",<br>                    "partnerName": "Razor Pay",<br>                    "salePrice": 130.00,<br>                    "skuId": 8430540,<br>                    "skuName": "BundledSKU (8430536)"<br>                },<br>                "tags": [<br>                    {<br>                        "tagName": "offer of the day"<br>                    },<br>                    {<br>                        "tagName": "testing"<br>                    },<br>                    {<br>                        "tagName": "test duplicate"<br>                    },<br>                    {<br>                        "tagName": "tagnew"<br>                    }<br>                ],<br>                "termsConditions": "terms",<br>                "validityType": "months"<br>            },<br>            {<br>                "attachments": [<br>                    <br>                ],<br>                "brandName": "",<br>                "buyForOthers": true,<br>                "categories": [<br>                    {<br>                        "categoryId": 1658681,<br>                        "categoryName": "Amazon_Gift_Card"<br>                    }<br>                ],<br>                "circle": {<br>                    <br>                },<br>                "consentFlag": false,<br>                "discounts": {<br>                    <br>                },<br>                "duration": 365,<br>                "isLeadProduct": false,<br>                "isWishListed": false,<br>                "name": "Amazon card 300,200,100",<br>                "productFlavor": "",<br>                "productId": 1696799,<br>                "productType": "bundle",<br>                "rating": {<br>                    "averageRating": 0,<br>                    "ratingType": "Overall",<br>                    "totalRatingCount": 0,<br>                    "totalReviewCount": 0<br>                },<br>                "shortDescription": "Amazon card 300,200,100",<br>                "skuDetails": {<br>                    "basePrice": 2010.00,<br>                    "fulfillmentType": "Email",<br>                    "inventory": 982,<br>                    "netPrice": 112.00,<br>                    "partnerId": 231200013,<br>                    "partnerLogoUrl": "https://vishopuat.myvi.in/documents/48335/0/razorpay_logo.jpg",<br>                    "partnerName": "Razor Pay",<br>                    "salePrice": 112.00,<br>                    "skuId": 1696803,<br>                    "skuName": "BundledSKU (1696799"<br>                },<br>                "tags": [<br>                    {<br>                        "tagName": "offer of the day"<br>                    },<br>                    {<br>                        "tagName": "testing"<br>                    },<br>                    {<br>                        "tagName": "test duplicate"<br>                    },<br>                    {<br>                        "tagName": "tagnew"<br>                    }<br>                ],<br>                "termsConditions": "<p>Amazon card 300,200,100</p>",<br>                "validityType": "days"<br>            },<br>            {<br>                "attachments": [<br>                    {<br>                        "contentType": "jpg",<br>                        "imagePriority": 0.0,<br>                        "name": "download (4).jpg",<br>                        "type": 0,<br>                        "url": "https://vishopuat.myvi.in/documents/535777/0/download (4).jpg"<br>                    }<br>                ],<br>                "brandName": "",<br>                "buyForOthers": true,<br>                "categories": [<br>                    {<br>                        "categoryId": 63771,<br>                        "categoryName": "Newspaper Subscription"<br>                    },<br>                    {<br>                        "categoryId": 601253,<br>                        "categoryName": "Rating4Star"<br>                    },<br>                    {<br>                        "categoryId": 63677,<br>                        "categoryName": "OTT"<br>                    }<br>                ],<br>                "circle": {<br>                    <br>                },<br>                "consentFlag": false,<br>                "discounts": {<br>                    <br>                },<br>                "duration": 1,<br>                "isLeadProduct": false,<br>                "isWishListed": false,<br>                "name": "Docubay 1 Month Pack and 6 Month",<br>                "productFlavor": "",<br>                "productId": 1214156,<br>                "productType": "bundle",<br>                "rating": {<br>                    "averageRating": 0,<br>                    "ratingType": "Overall",<br>                    "totalRatingCount": 0,<br>                    "totalReviewCount": 0<br>                },<br>                "shortDescription": "Docubay 1 Month Pack and 6 Month",<br>                "skuDetails": {<br>                    "basePrice": 10200.00,<br>                    "inventory": 94,<br>                    "netPrice": 5200.00,<br>                    "partnerId": 230800002,<br>                    "partnerLogoUrl": "https://vishopuat.myvi.in/documents/48335/0/company-logo-1 (1).png",<br>                    "partnerName": "Euronet Services India LTD",<br>                    "salePrice": 5200.00,<br>                    "skuId": 1214160,<br>                    "skuName": "BundledSKU (1214156)"<br>                },<br>                "tags": [<br>                    {<br>                        "tagName": "testing"<br>                    },<br>                    {<br>                        "tagName": "test duplicate"<br>                    }<br>                ],<br>                "termsConditions": "<p>Docubay 1 Month Pack and 6 Month</p>",<br>                "validityType": "year"<br>            },<br>            {<br>                "attachments": [<br>                    <br>                ],<br>                "brandName": "",<br>                "buyForOthers": true,<br>                "categories": [<br>                    {<br>                        "categoryId": 63677,<br>                        "categoryName": "OTT"<br>                    }<br>                ],<br>                "circle": {<br>                    <br>                },<br>                "consentFlag": false,<br>                "discounts": {<br>                    <br>                },<br>                "duration": 100,<br>                "isLeadProduct": false,<br>                "isWishListed": false,<br>                "name": "OTT PARTNER PROD",<br>                "productFlavor": "",<br>                "productId": 1294930,<br>                "productType": "bundle",<br>                "rating": {<br>                    "averageRating": 0,<br>                    "ratingType": "Overall",<br>                    "totalRatingCount": 0,<br>                    "totalReviewCount": 0<br>                },<br>                "shortDescription": "OTT PARTNER PROD",<br>                "skuDetails": {<br>                    "basePrice": 2051.00,<br>                    "inventory": 10,<br>                    "netPrice": 1820.00,<br>                    "partnerId": 231100001,<br>                    "partnerLogoUrl": "https://vishopuat.myvi.in/documents/48335/0/company-logo-1.png",<br>                    "partnerName": "ETVWin",<br>                    "salePrice": 1820.00,<br>                    "skuId": 1294934,<br>                    "skuName": "BundledSKU (1294930)"<br>                },<br>                "tags": [<br>                    {<br>                        "tagName": "testing"<br>                    },<br>                    {<br>                        "tagName": "test duplicate"<br>                    }<br>                ],<br>                "termsConditions": "",<br>                "validityType": "days"<br>            },<br>            {<br>                "attachments": [<br>                    <br>                ],<br>                "brandName": "",<br>                "buyForOthers": true,<br>                "categories": [<br>                    {<br>                        "categoryId": 63702,<br>                        "categoryName": "Entertainment Gift Card"<br>                    },<br>                    {<br>                        "categoryId": 1658681,<br>                        "categoryName": "Amazon_Gift_Card"<br>                    }<br>                ],<br>                "circle": {<br>                    <br>                },<br>                "consentFlag": true,<br>                "consentText": "ack required",<br>                "discounts": {<br>                    <br>                },<br>                "duration": 3,<br>                "isLeadProduct": false,<br>                "isWishListed": false,<br>                "name": "Voucher Gift Card Bundle Product",<br>                "productFlavor": "gift",<br>                "productId": 8534279,<br>                "productType": "bundle",<br>                "rating": {<br>                    "averageRating": 0,<br>                    "ratingType": "Overall",<br>                    "totalRatingCount": 0,<br>                    "totalReviewCount": 0<br>                },<br>                "shortDescription": "3 Gift cards available",<br>                "skuDetails": {<br>                    "basePrice": 8299.00,<br>                    "inventory": 22,<br>                    "netPrice": 7291.00,<br>                    "partnerId": 230500002,<br>                    "partnerLogoUrl": "https://vishopuat.myvi.in/documents/48335/0/images (1).jpeg",<br>                    "partnerName": "UAT test 123",<br>                    "salePrice": 7291.00,<br>                    "skuId": 8534283,<br>                    "skuName": "BundledSKU (8534279)"<br>                },<br>                "tags": [<br>                    <br>                ],<br>                "termsConditions": "terms and conditions",<br>                "validityType": "year"<br>            },<br>            {<br>                "attachments": [<br>                    <br>                ],<br>                "brandName": "",<br>                "buyForOthers": true,<br>                "categories": [<br>                    {<br>                        "categoryId": 63677,<br>                        "categoryName": "OTT"<br>                    }<br>                ],<br>                "circle": {<br>                    <br>                },<br>                "consentFlag": false,<br>                "discounts": {<br>                    <br>                },<br>                "duration": 1,<br>                "isLeadProduct": false,<br>                "isWishListed": false,<br>                "name": "Sanity hard bundle",<br>                "productFlavor": "",<br>                "productId": 8451447,<br>                "productType": "bundle",<br>                "rating": {<br>                    "averageRating": 0,<br>                    "ratingType": "Overall",<br>                    "totalRatingCount": 0,<br>                    "totalReviewCount": 0<br>                },<br>                "shortDescription": "Sanity hard bundle",<br>                "skuDetails": {<br>                    "basePrice": 3003.00,<br>                    "inventory": 100,<br>                    "netPrice": 3001.54,<br>                    "partnerId": 230500002,<br>                    "partnerLogoUrl": "https://vishopuat.myvi.in/documents/48335/0/images (1).jpeg",<br>                    "partnerName": "UAT test 123",<br>                    "salePrice": 3001.54,<br>                    "skuId": 8451451,<br>                    "skuName": "BundledSKU (8451447)"<br>                },<br>                "tags": [<br>                    <br>                ],<br>                "termsConditions": "terms",<br>                "validityType": "months"<br>            },<br>            {<br>                "attachments": [<br>                    <br>                ],<br>                "brandName": "",<br>                "buyForOthers": true,<br>                "categories": [<br>                    {<br>                        "categoryId": 63677,<br>                        "categoryName": "OTT"<br>                    }<br>                ],<br>                "circle": {<br>                    <br>                },<br>                "consentFlag": false,<br>                "discounts": {<br>                    <br>                },<br>                "duration": 12,<br>                "isLeadProduct": false,<br>                "isWishListed": false,<br>                "name": "Stack Sanity_Check",<br>                "productFlavor": "gift",<br>                "productId": 8437427,<br>                "productType": "bundle",<br>                "rating": {<br>                    "averageRating": 0,<br>                    "ratingType": "Overall",<br>                    "totalRatingCount": 0,<br>                    "totalReviewCount": 0<br>                },<br>                "shortDescription": "Stack Sanity_Check",<br>                "skuDetails": {<br>                    "basePrice": 3703.00,<br>                    "inventory": 100,<br>                    "netPrice": 3101.54,<br>                    "partnerId": 230500002,<br>                    "partnerLogoUrl": "https://vishopuat.myvi.in/documents/48335/0/images (1).jpeg",<br>                    "partnerName": "UAT test 123",<br>                    "salePrice": 3101.54,<br>                    "skuId": 8437431,<br>                    "skuName": "BundledSKU (8437427)"<br>                },<br>                "tags": [<br>                    <br>                ],<br>                "termsConditions": "terms",<br>                "validityType": "months"<br>            },<br>            {<br>                "attachments": [<br>                    {<br>                        "contentType": "jpg",<br>                        "imagePriority": 0.0,<br>                        "name": "SL (1).jpg",<br>                        "type": 0,<br>                        "url": "https://vishopuat.myvi.in/documents/603969/0/SL (1).jpg"<br>                    },<br>                    {<br>                        "contentType": "webp",<br>                        "imagePriority": 1.0,<br>                        "name": "SL.webp",<br>                        "type": 0,<br>                        "url": "https://vishopuat.myvi.in/documents/603969/0/SL.webp"<br>                    }<br>                ],<br>                "brandName": "",<br>                "buyForOthers": true,<br>                "categories": [<br>                    {<br>                        "categoryId": 63677,<br>                        "categoryName": "OTT"<br>                    }<br>                ],<br>                "circle": {<br>                    <br>                },<br>                "consentFlag": false,<br>                "discounts": {<br>                    "discountId": 7005308,<br>                    "discountValue": 1090.0,<br>                    "imageURL": "",<br>                    "shortDesc": "hard bundle",<br>                    "target": "skus",<br>                    "usePercentage": false<br>                },<br>                "duration": 13,<br>                "isLeadProduct": false,<br>                "isWishListed": false,<br>                "name": "Sony LIV Premium Pack",<br>                "productFlavor": "",<br>                "productId": 674926,<br>                "productType": "bundle",<br>                "rating": {<br>                    "averageRating": 0,<br>                    "ratingType": "Overall",<br>                    "totalRatingCount": 0,<br>                    "totalReviewCount": 0<br>                },<br>                "shortDescription": "Live Sports, Channels & Reality TV Shows",<br>                "skuDetails": {<br>                    "basePrice": 2098.00,<br>                    "fulfillmentType": "Mobile",<br>                    "inventory": -2,<br>                    "netPrice": 10.00,<br>                    "partnerId": 230800019,<br>                    "partnerLogoUrl": "https://vishopuat.myvi.in/documents/48335/0/company-logo-1.png",<br>                    "partnerName": "SonyLivIndia",<br>                    "salePrice": 1100.00,<br>                    "skuId": 674930,<br>                    "skuName": "SLIV13MTEST"<br>                },<br>                "tags": [<br>                    <br>                ],<br>                "termsConditions": "",<br>                "validityType": "months"<br>            }<br>        ],<br>        "responseId": "AND10301712038883538",<br>        "start": 1,<br>        "totalCount": 10,<br>        "usefacets": true<br>    }<br>}</pre></td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='6'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Another Child Test</h5>
+						<span class="node-time label grey lighten-1 white-text">Sep 2, 2024 06:54:23 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+						<span class='test-status right pass'>pass</span>
+							<div class='node-desc'>Description of Another Child Test</div>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:54:23 PM</td>
+													<td class='step-details'>This is another child test</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<!-- category view -->
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>2</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>2</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Sep 2, 2024 06:54:23 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Sep 2, 2024 06:54:23 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>2ms</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 2,
+				failParent: 0,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 0,
+				
+				passChild: 1,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 1,
+				exceptionsChild: 0,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+ 		<script type='text/javascript'>
+ 		</script>
+	</body>
+	
+</html>

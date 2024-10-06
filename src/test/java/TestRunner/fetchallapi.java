@@ -8,10 +8,10 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		features = {".//Features/"},
-		glue="API", //Step definition package name
+		glue="smoke", //Step definition package name
 		dryRun = false,
 		monochrome = true,
-		tags = "@api_regression",//scenarios under @sanity tag will be executed
+		tags = "@fetch_ALL_API",//scenarios under @sanity tag will be executed
 		plugin = {"pretty","html:target/cucumber-reports/reports_html.html"}
 		)
 

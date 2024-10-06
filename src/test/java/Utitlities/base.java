@@ -19,6 +19,7 @@ public class base extends Help{
 	{
 		Logger log = LogManager.getLogger("StepDef");
 		log.info(logs);
+		
 	}
 	public static void report(String report)
 	{
@@ -37,6 +38,7 @@ public class base extends Help{
 		options.addArguments("--remote-allow-origins=*");
 		options.addArguments("user-data-dir=C:/Users/2494229/AppData/Local/Google/Chrome/User Data/Default");
 		options.addArguments("window-size=1200x600");
+		options.addArguments("--headless");
 		WebDriverManager.chromedriver().setup();
 		//WebDriver driver = new ChromeDriver(options);
 		driver = new ChromeDriver(options);

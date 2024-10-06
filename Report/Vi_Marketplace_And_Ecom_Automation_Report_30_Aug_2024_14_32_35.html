@@ -1,466 +1,0 @@
-
-<!DOCTYPE html>
-<html>
-	<head>
-		<!--
-			ExtentReports Library 2.41.1 | http://relevantcodes.com/extentreports-for-selenium/ | https://github.com/anshooarora/
-			Copyright (c) 2015, Anshoo Arora (Relevant Codes) | Copyrights licensed under the New BSD License | http://opensource.org/licenses/BSD-3-Clause
-			Documentation: http://extentreports.relevantcodes.com 
-		-->
-
-		<meta charset='UTF-8' /> 
-		<meta name='description' content='ExtentReports (by Anshoo Arora) is a reporting library for automation testing for .NET and Java. It creates detailed and beautiful HTML reports for modern browsers. ExtentReports shows test and step summary along with dashboards, system and environment details for quick analysis of your tests.' />
-		<meta name='robots' content='noodp, noydir' />
-		<meta name='viewport' content='width=device-width, initial-scale=1' />
-		<meta name='extentx' id='extentx' content='' />
-		
-		<title>
-				ExtentReports 2.0
-		</title>
-		
-		
-		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
-		<link href='https://cdn.rawgit.com/anshooarora/extentreports/6032d73243ba4fe4fb8769eb9c315d4fdf16fe68/cdn/extent.css' type='text/css' rel='stylesheet' />
-		
-		<style>
-				
-            
-                
-            
-        
-		</style>
-	</head>
-	
-	
-	<body class='extent default standard hide-overflow'>
-		<!-- nav -->
-		<nav>
-			<div class='logo-container blue darken-2'>
-				<a class='logo-content' href='http://extentreports.relevantcodes.com'>
-					<span>ExtentReports</span>
-				</a>
-				<a href='#' data-activates='slide-out' class='button-collapse hide-on-large-only'><i class='mdi-navigation-apps'></i></a>
-			</div>
-			<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
-				<li class='analysis waves-effect active'><a href='#!' class='test-view' onclick="_updateCurrentStage(0)"><i class='mdi-action-dashboard'></i>Test Details</a></li>
-				<li class='analysis waves-effect'>
-					<a href='#!' onclick="_updateCurrentStage(-1)" class='dashboard-view'><i class='mdi-action-track-changes'></i></i>Analysis</a>
-				</li>
-			</ul>
-			<span class='report-name'>Automation Report</span> <span class='report-headline'></span>
-			<ul class='right hide-on-med-and-down nav-right'>
-				<li class='theme-selector' alt='Click to toggle dark theme. To enable by default, use js configuration $("body").addClass("dark");' title='Click to toggle dark theme. To enable by default, use js configuration $("body").addClass("dark");'>
-					<i class='mdi-hardware-desktop-windows'></i>
-				</li>
-				<li>
-					<span class='suite-started-time'>2024-08-30 14:32:47</span>
-				</li>
-				<li>
-					<span>v2.41.1</span>
-				</li>
-			</ul>
-		</nav>
-		<!-- /nav -->
-		
-		<!-- container -->
-		<div class='container'>
-			
-			<!-- dashboard -->
-			<div id='dashboard-view' class='row'>
-				<div class='time-totals'>
-					<div class='col l2 m4 s6'>
-						<div class='card suite-total-tests'> 
-							<span class='panel-name'>Total Tests</span> 
-							<span class='total-tests'> <span class='panel-lead'></span> </span> 
-						</div> 
-					</div>
-					<div class='col l2 m4 s6'>
-						<div class='card suite-total-steps'> 
-							<span class='panel-name'>Total Steps</span> 
-							<span class='total-steps'> <span class='panel-lead'></span> </span> 
-						</div> 
-					</div>
-					<div class='col l2 m4 s12'>
-						<div class='card suite-total-time-current'> 
-							<span class='panel-name'>Total Time Taken (Current Run)</span> 
-							<span class='suite-total-time-current-value panel-lead'>0h 0m 11s+648ms</span> 
-						</div> 
-					</div>
-					<div class='col l2 m4 s12'>
-						<div class='card suite-total-time-overall'> 
-							<span class='panel-name'>Total Time Taken (Overall)</span> 
-							<span class='suite-total-time-overall-value panel-lead'>0h 0m 11s+648ms</span> 
-						</div> 
-					</div>
-					<div class='col l2 m4 s6 suite-start-time'>
-						<div class='card accent green-accent'> 
-							<span class='panel-name'>Start</span> 
-							<span class='panel-lead suite-started-time'>2024-08-30 14:32:35</span> 
-						</div> 
-					</div>
-					<div class='col l2 m4 s6 suite-end-time'>
-						<div class='card accent pink-accent'> 
-							<span class='panel-name'>End</span> 
-							<span class='panel-lead suite-ended-time'>2024-08-30 14:32:47</span> 
-						</div> 
-					</div>
-				</div>
-				<div class='charts'>
-					<div class='col s12 m6 l4 fh'> 
-						<div class='card-panel'> 
-							<div>
-								<span class='panel-name'>Tests View</span>
-							</div> 
-							<div class='panel-setting modal-trigger test-count-setting right'>
-								<a href='#test-count-setting'><i class='mdi-navigation-more-vert text-md'></i></a>
-							</div> 
-							<div class='chart-box'>
-								<canvas class='text-centered' id='test-analysis'></canvas>
-							</div> 
-							<div>
-								<span class='weight-light'><span class='t-pass-count weight-normal'></span> test(s) passed</span>
-							</div> 
-							<div>
-								<span class='weight-light'><span class='t-fail-count weight-normal'></span> test(s) failed, <span class='t-others-count weight-normal'></span> others</span>
-							</div> 
-						</div> 
-					</div> 
-					<div class='col s12 m6 l4 fh'> 
-						<div class='card-panel'> 
-							<div>
-								<span class='panel-name'>Steps View</span>
-							</div> 
-							<div class='panel-setting modal-trigger step-status-filter right'>
-								<a href='#step-status-filter'><i class='mdi-navigation-more-vert text-md'></i></a>
-							</div> 
-							<div class='chart-box'>
-								<canvas class='text-centered' id='step-analysis'></canvas>
-							</div> 
-							<div>
-								<span class='weight-light'><span class='s-pass-count weight-normal'></span> step(s) passed </span>
-							</div> 
-							<div>
-								<span class='weight-light'><span class='s-fail-count weight-normal'></span> step(s) failed, <span class='s-others-count weight-normal'></span> others</span>
-							</div> 
-						</div> 
-					</div>
-					<div class='col s12 m12 l4 fh'> 
-						<div class='card-panel'> 
-							<span class='panel-name'>Pass Percentage</span> 
-							<span class='pass-percentage panel-lead'></span> 
-							<div class='progress light-blue lighten-3'> 
-								<div class='determinate light-blue'></div> 
-							</div> 
-						</div> 
-					</div>
-				</div>
-				<div class='system-view'>
-					<div class='col l4 m12 s12'>
-						<div class='card-panel'>
-							<span class='label info outline right'>Environment</span>
-							<table>
-								<thead>
-									<tr>
-										<th>Param</th>
-										<th>Value</th>
-									</tr>
-								</thead>
-								<tbody>
-										<tr>
-											<td>User Name</td>
-											<td>2494229</td>
-										</tr>
-										<tr>
-											<td>OS</td>
-											<td>Windows 11</td>
-										</tr>
-										<tr>
-											<td>Java Version</td>
-											<td>17.0.5</td>
-										</tr>
-										<tr>
-											<td>Host Name</td>
-											<td>01HW2086661</td>
-										</tr>
-										<tr>
-											<td>os</td>
-											<td>win7</td>
-										</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- /dashboard -->
-			
-			<!-- tests -->
-			<div id='test-view' class='row _addedTable'>
-				<div class='col _addedCell1'>
-					<div class='contents'>
-						<div class='card-panel heading'>
-							<h5>Tests</h5>
-						</div>
-						<div class='card-panel filters'>
-							<div>
-								<a class='dropdown-button btn-floating btn-small waves-effect waves-light grey tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
-									<i class='mdi-action-reorder'></i>
-								</a>
-								<ul id='tests-toggle' class='dropdown-content'>
-									<li class='pass'><a href='#!'>Pass</a></li>
-									<li class='fail'><a href='#!'>Fail</a></li>
-									<li class='skip'><a href='#!'>Skip</a></li>
-									<li class='divider'></li>
-									<li class='clear'><a href='#!'>Clear Filters</a></li>
-								</ul>
-							</div>
-							<div>
-								<a class='btn-floating btn-small waves-effect waves-light grey' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
-									<i class='mdi-navigation-close'></i>
-								</a>
-							</div>
-							<div>
-								<a class='btn-floating btn-small waves-effect waves-light grey' id='enableDashboard' alt='Enable Dashboard' title='Enable Dashboard'>
-									<i class='mdi-action-track-changes'></i>
-								</a>
-							</div>
-							<div>
-								<a class='btn-floating btn-small waves-effect waves-light blue enabled' id='refreshCharts' alt='Refresh Charts on Filters' title='Refresh Charts on Filters'>
-									<i class='mdi-navigation-refresh'></i>
-								</a>
-							</div>
-							<div class='search' alt='Search Tests' title='Search Tests'>
-								<div class='input-field left'>
-									<input id='searchTests' type='text' class='validate' placeholder='Search Tests...'>
-								</div>
-								<a href="#" class='btn-floating btn-small waves-effect waves-light grey'>
-									<i class='mdi-action-search'></i>
-								</a>
-							</div>
-						</div>
-						<div class='card-panel no-padding-h no-padding-v no-margin-v'>
-							<div class='wrapper'>
-								<ul id='test-collection' class='test-collection'>
-										<li class='collection-item test displayed active pass ' extentid='7ea07b40-87b4-4673-8795-7e4b72814e8d'>
-											<div class='test-head'>
-												<span class='test-name'>Verify Buy Journey of LR API via Add to Cart </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2024-08-30 14:32:37</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2024-08-30 14:32:47</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 9s+845ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>14:32:42</td>
-																	<td class='step-details'><pre>{<br>    "channelName": "DXL",<br>    "data": {<br>        "customerId": 1000048402,<br>        "customerMSISDN": "7265902544",<br>        "ecommOrderId": -1,<br>        "promoId": "",<br>        "orderItems": [<br>            {<br>                "beneficiaryDetails": {<br>                    "address": {<br>                       "addressLine1": "U2FsdGVkX1%2FakzmXBXWny0NO1wZg56LS%2B%2B10%2BouY6yg%3D",<br>                        "addressLine2": "U2FsdGVkX1%2BaZP0oP%2BQ18mRh%2BzZnL%2F53c%2F7gtStHP6k%3D",<br>                        "city": "U2FsdGVkX1%2BFb3QnlAAurPcR9eyq2ECQlUZSX%2BrXL58%3D",<br>                        "country": "U2FsdGVkX186dPHluoLifpHcUtiBwP6oVFk6JPRJCHs%3D",<br>                        "landmark": "U2FsdGVkX182BdTUFVEJIZkn16MvOoOwToDQvKEroFI%3D",<br>                        "postalCode": "U2FsdGVkX189n31CLohcCdL5EMoOVeYrBKfNKOGS0PU%3D"<br>                    },<br>                    "beneficiaryName": "U2FsdGVkX1%2FKungsCwYvrBMJ9s9nNwylWu%2FXHGtOJC4%3D",<br>                    "emailAddress": "U2FsdGVkX1%2FuMgU5PvLTB0r2zQn7Xx3D3gE7lhMOiZM%3D",<br>                    "giftMessage": "",<br>                    "mobileNo": "U2FsdGVkX19a05gghOZQZC8vP1aV3hM6IO2LFtnVc14%3D"<br>                },<br>                "itemPrice": 0,<br>                "consentFlag": 1,<br>                "isLeadProduct": 0,<br>                "leadDetails": [],<br>                "productId": 5764270,<br>                "productName": "Lifestyle E-Gift Card",<br>                "quantity": 1,<br>                "skuId": 5764286<br>            }<br>        ]<br>    },<br>    "requestId": "1234567890",<br>    "requestType": "add",<br>    "serviceName": "manageOrder"<br>}</pre></td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>14:32:42</td>
-																	<td class='step-details'><pre>{<br>    "data": {<br>        "GSTNumber": "",<br>        "availGST": "No",<br>        "billingAddress": {<br>            "addressId": 177409,<br>            "city": "U2FsdGVkX19Xc6eLyvqMZkb/aEyYOARmXqdcsC953Qk=",<br>            "country": "U2FsdGVkX1+Sa6gID0/L6al9KrFO6cIPHy8Exqua2TU=",<br>            "name": "U2FsdGVkX1/X1K2Uw//0Lv39uaWREx9zr2jdothEwHw=",<br>            "postalCode": "U2FsdGVkX18/nySZu1x//MRXC1La/+ZypkSGWm7UtM0=",<br>            "region": "U2FsdGVkX1+gLdnbSkm5MK9tzw2bUI2mdcwn/+Dq+EQ=",<br>            "street1": "U2FsdGVkX1+uVKyAN9lcd3j3awTA4d0epaBnKYlWJ8o=",<br>            "street2": "U2FsdGVkX1/XlnmDCYROVKj6cDdXBFtM7cFpYt2D1PE=",<br>            "street3": "U2FsdGVkX18II/3g3QI7qlhYyQU2hbAwKcOE01azCGQ="<br>        },<br>        "customerId": 1000048402,<br>        "customerMSISDN": "9373737606",<br>        "ecommOrderId": 9044937,<br>        "enableCreditCard": true,<br>        "orderAmount": 100.00,<br>        "orderDate": "30-08-2024 14:32:44",<br>        "orderItems": [<br>            {<br>                "beneficiaryDetails": {<br>                    "address": {<br>                        "addressLine1": "U2FsdGVkX1/l6z5OZeSBi7IuvYYeACl9q4g4j67k/NM=",<br>                        "addressLine2": "U2FsdGVkX1/9F+OP5dIhuC7mYReB+9oKPD3Q/0N7wUo=",<br>                        "city": "U2FsdGVkX1818aqSqsonklg+UDQr+v4FIKgHqfzdeT8=",<br>                        "country": "U2FsdGVkX1+OtOl/GLEu07UmSS6JQYT0uqdo7dRonF4=",<br>                        "landmark": "U2FsdGVkX19mqqkahA4pzTXoV9B4PoN4X1m4LycQM+E=",<br>                        "postalCode": "U2FsdGVkX1+7HItNuuwsYCHG2ZVeIv9G1i/jRx/sPSw=",<br>                        "state": "U2FsdGVkX19mWfVooLabmLSLSBu03+idrmcWZGayQHQ="<br>                    },<br>                    "beneficiaryName": "U2FsdGVkX1+fYAw4bWzdu/w7dwIRFFHN7VLbn0IGaKQ=",<br>                    "emailAddress": "U2FsdGVkX197v8x9IpcXmCsY1qPmKD6axU8+cxPRS0M=",<br>                    "giftImage": "",<br>                    "giftMessage": "",<br>                    "mobileNo": "U2FsdGVkX18ZqScG4Q37FBChikydYnZjXhts/DUPmac="<br>                },<br>                "brandName": "iPhone",<br>                "buyForOthers": true,<br>                "consentFlag": false,<br>                "currentInventory": 960,<br>                "duration": 9,<br>                "enableCreditCard": true,<br>                "isLeadProduct": false,<br>                "itemNetPrice": 100.00,<br>                "itemPrice": 1000.00,<br>                "itemSalePrice": 100.00,<br>                "orderItemId": 260713,<br>                "productId": 5764270,<br>                "productName": "Apple iPhone 15 512 GB - Blue",<br>                "quantity": 1,<br>                "skuId": 5764286,<br>                "taxDetails": {<br>                    "IGST": 0.00,<br>                    "centralGST": 0.00,<br>                    "stateGST": 0.00<br>                },<br>                "termsConditions": "========================================\n\n<p><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><b>Terms &amp;&nbsp;Conditions</b></span></span></p>\n\n<ul>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">This Voucher Code is issued to add money to Swiggy Money.</span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">Use of Swiggy Money will be subject to terms and conditions available at <a href=\"https://cdn.razorpay.com/static/assets/wallet/tncs.pdf\" style=\"color:blue; text-decoration:underline\">https://cdn.razorpay.com/static/assets/wallet/tncs.pdf</a></span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">Swiggy Money Code validity will be 6 months only, once the code is added to the Swiggy Money wallet the user gets a 1year validity to redeem.</span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">The amount in Swiggy Money can be redeemed on all types of orders on Swiggy except Minis orders.</span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">The amount cannot be taken out/transferred from Swiggy Money and it can’t be used to purchase any gift cards..</span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">The amount can be used on multiple transactions on Swiggy.</span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">The amount covers taxes, packing charges, delivery fee.</span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">Users not having the Swiggy account need to login to the Swiggy app and create the Swiggy account to use these Voucher Codes.</span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">E-Gift Cards are normally delivered instantly. But sometimes due to system issues, the delivery can be delayed up-to 24 - 48 hours.</span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">No returns and no refunds on gift cards.</span></span></span></li>\n</ul>",<br>                "validityType": "months"<br>            }<br>        ],<br>        "orderStatus": "open",<br>        "orderTaxDetails": {<br>            "orderCentralGST": 0.00,<br>            "orderIGST": 0.00,<br>            "orderstateGST": 0.00<br>        },<br>        "paymentCollectionFlag": true,<br>        "promoId": "",<br>        "promoMessage": "",<br>        "shippingAddress": {<br>            "addressId": 177410,<br>            "city": "U2FsdGVkX18SiE+lu2+xwlulKMdppBrc0xdQcXaf5dU=",<br>            "country": "U2FsdGVkX192PTZljTfn8+kUGZRXG7UKRnQeY51s9Ww=",<br>            "name": "U2FsdGVkX1+lWhtMj0EV0Lx4gEO9xAVn95NK1u4qt3s=",<br>            "postalCode": "U2FsdGVkX1/SYbgSiCVWau41loS4VEaDkksKap22Poo=",<br>            "region": "U2FsdGVkX19tZNX3vdJGUduVTnhXkSa4ADJcxLTV4DA=",<br>            "street1": "U2FsdGVkX1/SbVJRxJRNRa/La2SaaiNOGZo1ZZCKYoY=",<br>            "street2": "U2FsdGVkX185u/VfYlgk9NiiBl4lEc9q0Q8qK6S+VTI=",<br>            "street3": "U2FsdGVkX1+5XGEwjz5jb65t2J/vwkfuSd6kZbpkW58="<br>        },<br>        "telcoRechargeAmount": 0.00<br>    },<br>    "responseId": "1234567890",<br>    "status": "Success",<br>    "statusCode": "MP100",<br>    "statusMessage": "Request Processed Successfully"<br>}</pre></td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>14:32:42</td>
-																	<td class='step-details'>Log = Verify Buy Journey of LR API via Add to Cart</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>14:32:44</td>
-																	<td class='step-details'><pre>{<br>    "channelName": "DXL",<br>    "requestId": 123,<br>    "serviceName": "manageOrder",<br>    "requestType": "UPSERT_ADDRESS",<br>    "data": {<br>        "ecommOrderId": 9044937,<br>        "customerId": "1000048402",<br>        "customerMSISDN": 9373737606,<br>        "availGST": "No",<br>        "GSTNumber": "",<br>        "saveAddressForFuture": "yes",<br>        "billingAddress": {<br>            "addressId": -1,<br>            "city": "U2FsdGVkX1%2FmvQjh%2BbaVl743gzin4d5xL8nqC6zvy50%3D",<br>            "country": "U2FsdGVkX1949dXUQsY5IAvQ2rNeqAZluTYHW4sGoSw%3D",<br>            "name": "U2FsdGVkX19N4j3SW607xVBpRJ8Ywq3knPWB6Z7SXUo%3D",<br>            "postalCode": "U2FsdGVkX1%2BhV4cRXS2D70dq0FrGq%2BY5ggxbSDIuvYA%3D",<br>            "region": "U2FsdGVkX1%2BEZYWEBlcAuIVGKLOM6OkCIVjLuzfkj%2Fk%3D",<br>           "street1": "U2FsdGVkX18DzGt62Y%2FwWla9WDFOwgt6adP6PZCQ%2Bp4%3D",<br>            "street2": "U2FsdGVkX18llMddqAUAniJ6N9o9sYCNGD4iVZrMECQ%3D",<br>            "street3": "U2FsdGVkX18zg0Q5rKgmWB%2BRNdO3bf8Pb1q55V6LEkU%3D"<br>        },<br>        "shippingAddress": {<br>            "addressId": -1,<br>            "city": "U2FsdGVkX1%2BdIXRGBwCX2eF2oUraCvLE0QiW%2BI%2FrhdI%3D",<br>            "country": "U2FsdGVkX18m3TlzH1L3AhOAZlr5VKKyJj5Q1REHVWY%3D",<br>            "name": "U2FsdGVkX1%2F91pCqQGZZ3VBM49H5Ly8YIVHRGHRZv24%3D",<br>            "postalCode": "U2FsdGVkX1%2Fvt8t79mNyQxk32ylqrY4OaEZCxx9X82k%3D",<br>            "region": "U2FsdGVkX1%2BU4SE7qNk7hRTrvj%2FIlVAAGr%2BlhlowlNo%3D",<br>           "street1": "U2FsdGVkX1%2BXy2W0VXONldbBbg%2BJ6wYXKc8v4JeHUsI%3D",<br>            "street2": "U2FsdGVkX18WRJWS4aDn5VPmuNtNQoKtRjggUcOZI4Y%3D",<br>            "street3": "U2FsdGVkX18IkT8AVHNNIBh9k0ubdsfl1b9IDlD0JGA%3D"<br>        }<br>    }<br>}</pre></td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>14:32:44</td>
-																	<td class='step-details'><pre>{<br>    "data": {<br>        "GSTNumber": "",<br>        "availGST": "No",<br>        "billingAddress": {<br>            "addressId": 177411,<br>            "city": "U2FsdGVkX18PWncutsAn+8UBIZXQoMC3ev0PpaLH6m0=",<br>            "country": "U2FsdGVkX1+dlfHfYN4540PEb+PDQYD9AIsP128NfRk=",<br>            "name": "U2FsdGVkX1/qP9NXPFdfYEfw+kArEuwvpVevWPCtOb4=",<br>            "postalCode": "U2FsdGVkX190x2rdpnxLnJmk34xPAQ4iHopiZZFhkhU=",<br>            "region": "U2FsdGVkX18m6aTsoW7GrhjGriRw/x5m3FPGWgqFLyQ=",<br>            "street1": "U2FsdGVkX1/cRXB2oDVDpWOhWc6BE475e/OdZNFVNOg=",<br>            "street2": "U2FsdGVkX1/ly9H2bUdmIj6dkO023Ff/fiTGb7LrpKc=",<br>            "street3": "U2FsdGVkX1/wK6ya8QqhR9eDvmWBwLEN7bwI8Z9YC7g="<br>        },<br>        "customerId": 1000048402,<br>        "customerMSISDN": "9373737606",<br>        "ecommOrderId": 9044937,<br>        "enableCreditCard": true,<br>        "orderAmount": 100.00,<br>        "orderDate": "30-08-2024 14:32:44",<br>        "orderItems": [<br>            {<br>                "beneficiaryDetails": {<br>                    "address": {<br>                        "addressLine1": "U2FsdGVkX19nn5XrAIP7IQmay4kvj39lzGXT81DMThk=",<br>                        "addressLine2": "U2FsdGVkX1/Sp+OJTbWmmCjdp0AESOfmcHtT0ZrghZo=",<br>                        "city": "U2FsdGVkX18+lZhrTpNZJ+j8+rTl8as0oCw1+ovPML0=",<br>                        "country": "U2FsdGVkX18xSTsAn9LNaOfqkuMXgcWkSo9SY90ABjQ=",<br>                        "landmark": "U2FsdGVkX19H/niiOTBdLXg5OI265D1qhI/SpPWEU4M=",<br>                        "postalCode": "U2FsdGVkX19JdG2UKwjMFzaQVyrPsMQR5prb2Q9adII=",<br>                        "state": "U2FsdGVkX1+0YzIHfQDPBhyzJc6qowQHkfSTaCQ9/EI="<br>                    },<br>                    "beneficiaryName": "U2FsdGVkX19gmEuDDdcNAmAcND10aixea6CLKLlBGkI=",<br>                    "emailAddress": "U2FsdGVkX196F98AEn86G7TtrxOirPcOyqxeb47D9aU=",<br>                    "giftImage": "",<br>                    "giftMessage": "",<br>                    "mobileNo": "U2FsdGVkX1+o7EGfpmToSFAFlCxR+914ZQp6DUetsSM="<br>                },<br>                "brandName": "iPhone",<br>                "buyForOthers": true,<br>                "consentFlag": false,<br>                "currentInventory": 960,<br>                "duration": 9,<br>                "enableCreditCard": true,<br>                "isLeadProduct": false,<br>                "itemNetPrice": 100.00,<br>                "itemPrice": 1000.00,<br>                "itemSalePrice": 100.00,<br>                "orderItemId": 260713,<br>                "productId": 5764270,<br>                "productName": "Apple iPhone 15 512 GB - Blue",<br>                "quantity": 1,<br>                "skuId": 5764286,<br>                "taxDetails": {<br>                    "IGST": 0.00,<br>                    "centralGST": 0.00,<br>                    "stateGST": 0.00<br>                },<br>                "termsConditions": "========================================\n\n<p><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><b>Terms &amp;&nbsp;Conditions</b></span></span></p>\n\n<ul>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">This Voucher Code is issued to add money to Swiggy Money.</span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">Use of Swiggy Money will be subject to terms and conditions available at <a href=\"https://cdn.razorpay.com/static/assets/wallet/tncs.pdf\" style=\"color:blue; text-decoration:underline\">https://cdn.razorpay.com/static/assets/wallet/tncs.pdf</a></span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">Swiggy Money Code validity will be 6 months only, once the code is added to the Swiggy Money wallet the user gets a 1year validity to redeem.</span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">The amount in Swiggy Money can be redeemed on all types of orders on Swiggy except Minis orders.</span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">The amount cannot be taken out/transferred from Swiggy Money and it can’t be used to purchase any gift cards..</span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">The amount can be used on multiple transactions on Swiggy.</span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">The amount covers taxes, packing charges, delivery fee.</span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">Users not having the Swiggy account need to login to the Swiggy app and create the Swiggy account to use these Voucher Codes.</span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">E-Gift Cards are normally delivered instantly. But sometimes due to system issues, the delivery can be delayed up-to 24 - 48 hours.</span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">No returns and no refunds on gift cards.</span></span></span></li>\n</ul>",<br>                "validityType": "months"<br>            }<br>        ],<br>        "orderStatus": "open",<br>        "orderTaxDetails": {<br>            "orderCentralGST": 0.00,<br>            "orderIGST": 0.00,<br>            "orderstateGST": 0.00<br>        },<br>        "paymentCollectionFlag": true,<br>        "promoId": "",<br>        "promoMessage": "",<br>        "shippingAddress": {<br>            "addressId": 177412,<br>            "city": "U2FsdGVkX18Bb1leZtYhRr/LVXtmWtmnKZSz7/bQCKI=",<br>            "country": "U2FsdGVkX1/we7cw7GXhr6Q1H5PHFKxs9k/mr81YZfs=",<br>            "name": "U2FsdGVkX18dGOzZONY3hh41M4aEWLSH8CAGbV0CUTE=",<br>            "postalCode": "U2FsdGVkX1/M4S8cdzaXpK4gnjcgn8xUxYj2oKSewU0=",<br>            "region": "U2FsdGVkX18t/vBPXDZ2GXZ0uGSI9XXCnwey/za1R04=",<br>            "street1": "U2FsdGVkX18RX3VUss5jGPIHQxWL8ZGo8LaOZxsP9r8=",<br>            "street2": "U2FsdGVkX1/ec4/8jFpHVAha7WeCwbwFLaQOiZzPIPU=",<br>            "street3": "U2FsdGVkX1/HbnqznN2mbL1xyT+VNslv65xuwp518zY="<br>        },<br>        "telcoRechargeAmount": 0.00<br>    },<br>    "responseId": "123",<br>    "status": "Success",<br>    "statusCode": "MP100",<br>    "statusMessage": "Request Processed Successfully"<br>}</pre></td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>14:32:44</td>
-																	<td class='step-details'>Log = Verify Buy Journey of LR API via Add to Cart</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>14:32:44</td>
-																	<td class='step-details'>Log = Verify Buy Journey of LR API via Add to Cart</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>14:32:46</td>
-																	<td class='step-details'><pre>{<br>    "channelName": "DXL",<br>    "data": {<br>        "customerId": 1000048402,<br>        "customerMSISDN": "7265902544",<br>        "ecommOrderId": 9044937,<br>        "promoId": "",<br>        "orderItems": [<br>            {<br>                "beneficiaryDetails": {<br>                    "address": {<br>                       "addressLine1": "U2FsdGVkX18RtplnPDUgWFuWW7vAmMH%2FS%2Fzv2R%2FUr9k%3D",<br>                        "addressLine2": "U2FsdGVkX1%2FdvFcTC7HANQFARKA5rnLopyDH4o9NqQ4%3D",<br>                        "city": "U2FsdGVkX197TQTmaFwdK%2F59Abhr7WlIKWaOnFLEVpc%3D",<br>                        "country": "U2FsdGVkX1%2BOuM53dZgtzNNw6eRW6LSvoBlkhKwMZ20%3D",<br>                        "landmark": "U2FsdGVkX19eQasuhQY1KULvAfM20mAeCBhSNdYkOCk%3D",<br>                        "postalCode": "U2FsdGVkX1%2B79be%2FRW7qAhw1xyr2lCT33X3hi5cfuh0%3D"<br>                    },<br>                    "beneficiaryName": "U2FsdGVkX1%2BGzsSyK3EGUiiJD7j2GjNKC%2B2Tro%2BMKEA%3D",<br>                    "emailAddress": "U2FsdGVkX18FF2zOhMThfdDp%2FtELfuNmMGK0L8WCaxo%3D",<br>                    "giftMessage": "",<br>                    "mobileNo": "U2FsdGVkX1%2BsLUE9RW5qkXu7C%2BaQOIL%2BnbfzPF4fehM%3D"<br>                },<br>                "itemPrice": 0,<br>                "consentFlag": 1,<br>                "isLeadProduct": 0,<br>                "leadDetails": [],<br>                "productId": 5764270,<br>                "productName": "Lifestyle E-Gift Card",<br>                "quantity": 1,<br>                "skuId": 5764286<br>            }<br>        ]<br>    },<br>    "requestId": "1234567890",<br>    "requestType": "checkout",<br>    "serviceName": "manageOrder"<br>}</pre></td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>14:32:46</td>
-																	<td class='step-details'><pre>{<br>    "data": {<br>        "GSTNumber": "",<br>        "availGST": "no",<br>        "billingAddress": {<br>            "addressId": 9044940,<br>            "city": "U2FsdGVkX1/8TBvXJRbC2b+wKz2l4mL/pqLMzyRvlww=",<br>            "country": "U2FsdGVkX181u6N8SEDPeQRMrqwyCgz6YakHEtlcbEY=",<br>            "name": "U2FsdGVkX18TN8QV7qn+HE1dMMQyHC2ihXsTZQKC/xI=",<br>            "postalCode": "U2FsdGVkX1+rUuTOP20W/83k8SQ8ubpFKEo+DCKI+Ig=",<br>            "region": "U2FsdGVkX18y53LWINMDWwXOFvZ7ee2K8wC3x1FnfOc=",<br>            "street1": "U2FsdGVkX1+W0BIIW7agNKupdOF3+edUMT8VKf8xCaM=",<br>            "street2": "U2FsdGVkX18Z21TcsF3IhahUmOTtWkRoJ1Ru/kDtgkM=",<br>            "street3": "U2FsdGVkX19b2L9idyQrd4QSm4nWhZzCb2vVitlr7kA="<br>        },<br>        "customerId": 1000048402,<br>        "customerMSISDN": "9373737606",<br>        "ecommOrderId": 9044937,<br>        "enableCreditCard": true,<br>        "orderAmount": 100.00,<br>        "orderDate": "30-08-2024 14:32:47",<br>        "orderItems": [<br>            {<br>                "beneficiaryDetails": {<br>                    "address": {<br>                        "addressLine1": "U2FsdGVkX19FKISXspoOO74us95rN5Ol/zdxl10O/vU=",<br>                        "addressLine2": "U2FsdGVkX18lPoR2tex2yL1S7HG8omm1xc/DkMFkpi0=",<br>                        "city": "U2FsdGVkX19jNwL+Lhlr+Gbit/V61gxgjPTPn1CcmIQ=",<br>                        "country": "U2FsdGVkX18YihpAQr6FmC8NjU7s52kqrewGtxSamFc=",<br>                        "landmark": "U2FsdGVkX19UyqXto5gySBTXuVEzQz+NV3PsxxOnlNg=",<br>                        "postalCode": "U2FsdGVkX1/AmhWuq4eYFL9KEvVR+hlsMEmCC2O6bbk=",<br>                        "state": "U2FsdGVkX18MoJh5gX6gXUuk6YO97rWQZaCEShfh9y0="<br>                    },<br>                    "beneficiaryName": "U2FsdGVkX19fyIHg6LjIZt88Q9WXpO9KKNACiE+nZoQ=",<br>                    "emailAddress": "U2FsdGVkX19hN+iQLOf/akT1CE68HZ9EJPnhcTinmhs=",<br>                    "giftImage": "",<br>                    "giftMessage": "",<br>                    "mobileNo": "U2FsdGVkX19620wRXS/fT9OGKgguy0P/wdBy4nivPFA="<br>                },<br>                "brandName": "iPhone",<br>                "buyForOthers": true,<br>                "consentFlag": false,<br>                "currentInventory": 959,<br>                "duration": 9,<br>                "enableCreditCard": true,<br>                "isLeadProduct": false,<br>                "itemNetPrice": 100.00,<br>                "itemPrice": 1000.00,<br>                "itemSalePrice": 100.00,<br>                "orderItemId": 260713,<br>                "productId": 5764270,<br>                "productName": "Apple iPhone 15 512 GB - Blue",<br>                "quantity": 1,<br>                "skuId": 5764286,<br>                "taxDetails": {<br>                    "IGST": 0.00,<br>                    "centralGST": 0.00,<br>                    "stateGST": 0.00<br>                },<br>                "termsConditions": "========================================\n\n<p><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><b>Terms &amp;&nbsp;Conditions</b></span></span></p>\n\n<ul>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">This Voucher Code is issued to add money to Swiggy Money.</span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">Use of Swiggy Money will be subject to terms and conditions available at <a href=\"https://cdn.razorpay.com/static/assets/wallet/tncs.pdf\" style=\"color:blue; text-decoration:underline\">https://cdn.razorpay.com/static/assets/wallet/tncs.pdf</a></span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">Swiggy Money Code validity will be 6 months only, once the code is added to the Swiggy Money wallet the user gets a 1year validity to redeem.</span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">The amount in Swiggy Money can be redeemed on all types of orders on Swiggy except Minis orders.</span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">The amount cannot be taken out/transferred from Swiggy Money and it can’t be used to purchase any gift cards..</span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">The amount can be used on multiple transactions on Swiggy.</span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">The amount covers taxes, packing charges, delivery fee.</span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">Users not having the Swiggy account need to login to the Swiggy app and create the Swiggy account to use these Voucher Codes.</span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">E-Gift Cards are normally delivered instantly. But sometimes due to system issues, the delivery can be delayed up-to 24 - 48 hours.</span></span></span></li>\n\t<li><span style=\"font-size:12pt\"><span style=\"tab-stops:list .5in\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">No returns and no refunds on gift cards.</span></span></span></li>\n</ul>",<br>                "validityType": "months"<br>            }<br>        ],<br>        "orderStatus": "in-progress",<br>        "orderTaxDetails": {<br>            "orderCentralGST": 0.00,<br>            "orderIGST": 0.00,<br>            "orderstateGST": 0.00<br>        },<br>        "paymentCollectionFlag": true,<br>        "promoId": "",<br>        "promoMessage": "",<br>        "shippingAddress": {<br>            "addressId": 9044942,<br>            "city": "U2FsdGVkX19eWYnv9n0+poBwq3DZagZOJB5JkKGARI8=",<br>            "country": "U2FsdGVkX1/R/SlE/kbW6nxxNByKKOF75ncIFvQKKUw=",<br>            "name": "U2FsdGVkX19P7DEhH1ZYBGTV6hOyG7Qjl5n6T6tLmww=",<br>            "postalCode": "U2FsdGVkX1+9SdHSP5DyZevfPPXWl8lP/kviN5jVvZE=",<br>            "region": "U2FsdGVkX18lRqXR2LY8B7XrEsPsy8wip3gtq6zPUfk=",<br>            "street1": "U2FsdGVkX1/CA+tD5S24FKxdR3FsrRLYdT8pqSaMO54=",<br>            "street2": "U2FsdGVkX19dvn8Yes7Nk6UCfB6WchCzB5Gp1lhw5y4=",<br>            "street3": "U2FsdGVkX19bdnkUpsJTXQ9LkgnBRrvAF97t3+cCXPo="<br>        },<br>        "telcoRechargeAmount": 0.00<br>    },<br>    "responseId": "1234567890",<br>    "status": "Success",<br>    "statusCode": "MP100",<br>    "statusMessage": "Request Processed Successfully"<br>}</pre></td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>14:32:46</td>
-																	<td class='step-details'>Log = Verify Buy Journey of LR API via Add to Cart</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>14:32:47</td>
-																	<td class='step-details'><pre>{<br>    "channelName": "DXL",<br>    "requestId": 234,<br>    "serviceName": "updateOrder",<br>    "data": {<br>        "customerId": 1000048402,<br>        "customerMSISDN": 9373737606,<br>        "ecommOrderId": 9044937,<br>        "orderDate": "",<br>        "orderItems": [<br>            {<br> "orderItemId": "260713",<br> "productName": "Apple iPhone 15 512 GB - Blue",<br> "amount": "100.0"<br>}<br>        ],<br>        "paymentDetails": {<br>            "paymentOrderId": "PRE0984996373769038",<br>            "paymentDateTime": "16/08/2024 14:07:24",<br>            "paymentChannel": "JUSPAY",<br>            "gatewayTransactionId": "1234567899",<br>            "paymentMode": "card",<br>            "paymentMethodType": "card",<br>            "paymentGateway": "TPSL",<br>            "cardIssuer": "ICICI Bank",<br>            "paymentMethod": "VISA",<br>            "cardType": "Credit",<br>            "paymentAmount": 110.0,<br>            "paymentStatus": "success",<br>            "paymentGatewayId": "0",<br>            "cardConvenienceFee": 10,<br>            "orderPaymentAmount": 100.0,<br>            "rechargeAmount": 0<br>        }<br>    }<br>}</pre></td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>14:32:47</td>
-																	<td class='step-details'><pre>{<br>    "data": {<br>        "cardConvenienceFee": 10.00,<br>        "customerId": "1000048402",<br>        "customerMSISDN": "9373737606",<br>        "ecommOrderId": "9044937",<br>        "orderAmount": "110.00",<br>        "orderDate": "30-08-2024 14:32:47",<br>        "orderItems": [<br>            {<br>                "amount": "100.00",<br>                "orderItemId": "260713",<br>                "productName": "Apple iPhone 15 512 GB - Blue"<br>            }<br>        ],<br>        "orderPaymentAmount": 100.00,<br>        "orderStatus": "Placed"<br>    },<br>    "responseId": "234",<br>    "status": "Success",<br>    "statusCode": "MP100",<br>    "statusMessage": "Request Processed Successfully"<br>}</pre></td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>14:32:47</td>
-																	<td class='step-details'>Log = Verify Buy Journey of LR API via Add to Cart</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>14:32:47</td>
-																	<td class='step-details'>Log = Verify Buy Journey of LR API via Add to Cart</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>14:32:47</td>
-																	<td class='step-details'>Log = Verify Buy Journey of LR API via Add to Cart</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:32:47</td>
-																	<td class='step-details'>Test is pass</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>14:32:47</td>
-																	<td class='step-details'>Test End</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id='test-details-wrapper' class='col _addedCell2'>
-					<div class='contents'>
-						<div class='card-panel details-view'>
-							<h5 class='details-name'></h5>
-							<div class='step-filters right'>
-								<span class='btn-floating btn-small waves-effect waves-light blue' status='info' alt='info' title='info'><i class='mdi-action-info-outline'></i></span>
-								<span class='btn-floating btn-small waves-effect waves-light green' status='pass' alt='pass' title='pass'><i class='mdi-action-check-circle'></i></span>
-								<span class='btn-floating btn-small waves-effect waves-light red' status='fail' alt='fail' title='fail'><i class='mdi-navigation-cancel'></i></span>
-								<span class='btn-floating btn-small waves-effect waves-light red darken-4' status='fatal' alt='fatal' title='fatal'><i class='mdi-navigation-cancel'></i></span>
-								<span class='btn-floating btn-small waves-effect waves-light red lighten-2' status='error' alt='error' title='error'><i class='mdi-alert-error'></i></span>
-								<span class='btn-floating btn-small waves-effect waves-light orange' alt='warning' status='warning' title='warning'><i class='mdi-alert-warning'></i></span>
-								<span class='btn-floating btn-small waves-effect waves-light cyan' status='skip' alt='skip' title='skip'><i class='mdi-content-redo'></i></span>
-								<span class='btn-floating btn-small waves-effect waves-light grey darken-2' status='clear-step-filter' alt='Clear filters' title='Clear filters'><i class='mdi-content-clear'></i></span>
-							</div>
-							<div class='details-container'>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- /tests -->
-			
-			<!-- categories -->
-			<!-- /categories -->
-			
-			<!-- exceptions -->
-			<!-- /exceptions -->
-			
-			<!-- testrunner logs -->
-			<!-- /testrunner logs -->
-			
-		</div>
-		<!-- /container -->
-		
-		<!-- test dashboard counts setting -->
-		<div id='test-count-setting' class='modal bottom-sheet'> 
-			<div class='modal-content'> 
-				<h5>Configure Tests Count Setting</h5> 
-				<input name='test-count-setting' type='radio' id='parentWithoutNodes' class='with-gap'> 
-				<label for='parentWithoutNodes'>Parent Tests Only (Does not include child nodes in counts)</label> 
-				<br> 
-				<input name='test-count-setting' type='radio' id='parentWithoutNodesAndNodes' class='with-gap'> 
-				<label for='parentWithoutNodesAndNodes'>Parent Tests Without Child Tests + Child Tests</label> 
-				<br> 
-				<input name='test-count-setting' type='radio' id='childNodes' class='with-gap'> 
-				<label for='childNodes'>Child Tests Only</label> 
-			</div> 
-			<div class='modal-footer'> 
-				<a href='#!' class='modal-action modal-close waves-effect waves-green btn'>Save</a> 
-			</div> 
-		</div>
-		<!-- /test dashboard counts setting -->
-		
-		<!-- filter for step status -->
-		<div id='step-status-filter' class='modal bottom-sheet'> 
-			<div class='modal-content'> 
-				<h5>Select status</h5> 
-				<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-pass'> 
-				<label for='step-dashboard-filter-pass'>Pass</label> 
-				<br> 
-				<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-fail'> 
-				<label for='step-dashboard-filter-fail'>Fail</label> 
-				<br> 
-				<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-fatal'> 
-				<label for='step-dashboard-filter-fatal'>Fatal</label> 
-				<br> 
-				<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-error'> 
-				<label for='step-dashboard-filter-error'>Error</label> 
-				<br> 
-				<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-warning'> 
-				<label for='step-dashboard-filter-warning'>Warning</label> 
-				<br> 
-				<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-skip'> 
-				<label for='step-dashboard-filter-skip'>Skipped</label> 
-				<br> 
-				<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-info'> 
-				<label for='step-dashboard-filter-info'>Info</label> 
-				<br> 
-				<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-unknown'> 
-				<label for='step-dashboard-filter-unknown'>Unknown</label> 
-			</div>
-			<div class='modal-footer'> 
-				<a href='#!' class='modal-action modal-close waves-effect waves-green btn'>Save</a> 
-			</div> 
-		</div>
-		<!-- /filter for step status -->
-		
-		<script src='https://cdn.rawgit.com/anshooarora/extentreports/6032d73243ba4fe4fb8769eb9c315d4fdf16fe68/cdn/extent.js' type='text/javascript'></script>
-
-		<script>$(document).ready(function() { $('.logo span').html('ExtentReports'); });</script>
-		<script>
-				
-            
-                $(document).ready(function() {
-                    
-                });
-            
-        
-		</script>
-	</body>
-</html>

@@ -358,8 +358,8 @@ public class simple_Product_Configuration extends base{
 	@When("the user enters base PRICE into the Base Price field like {string}")
 	public void the_user_enters_base_price_into_the_base_price_field_like(String string) throws Exception{
 		//Enter base
-		reporter("Enter base price 1000");
-		enterText(driver, By.xpath("//input[@id='_com_liferay_commerce_product_definitions_web_internal_portlet_CPDefinitionsPortlet_price']"), ""+1000);
+		reporter("Enter base price 500");
+		enterText(driver, By.xpath("//input[@id='_com_liferay_commerce_product_definitions_web_internal_portlet_CPDefinitionsPortlet_price']"), ""+500);
 	}
 
 	@When("the user enters promo Price into the Promo Price field like {string}")
